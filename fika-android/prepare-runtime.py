@@ -22,10 +22,7 @@ def prepare():
     init = SOURCE / "recsys" / "__init__.py"
     if init.exists():
         entries.append((init, "recsys/__init__.py"))
-    for name in ("LICENSE", "NOTICE"):
-        path = SOURCE / name
-        if path.exists():
-            entries.append((path, "licenses/" + name))
+    entries.append((HERE.parent / "docs" / "third-party.txt", "docs/third-party.txt"))
     evaluation = HERE / "evaluation.json"
     entries.append((evaluation, "evaluation.json"))
     manifest = {}
