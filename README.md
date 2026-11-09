@@ -52,7 +52,3 @@ gradle -p fika-android :app:assembleDebug
 ```
 
 The debug APK is written to `fika-android/app/build/outputs/apk/debug/app-debug.apk`. On Windows, use `python` in place of `python3` for the two build commands if needed.
-
-## License
-
-See [LICENSE](LICENSE), [NOTICE](NOTICE), and the [mobile license](fika-mobile/LICENSE).
