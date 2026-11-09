@@ -1,0 +1,28 @@
+.local-page { min-height: 100svh; padding: 32px 22px 110px; background: #f6f8f5; }
+.local-page h1 { font-size: 30px; margin: 10px 0; letter-spacing: -1px; }
+.local-page p, .local-dialog p { line-height: 1.6; color: #57615b; }
+.local-eyebrow { color: #238447; font-size: 10px; font-weight: 800; letter-spacing: 1.5px; }
+.local-page input { width: 100%; box-sizing: border-box; padding: 14px; border: 1px solid #d5dfd6; border-radius: 14px; background: white; margin: 12px 0 20px; }
+.local-catalog { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
+.local-item { display: flex; flex-direction: column; align-items: center; gap: 7px; padding: 14px 8px; background: white; border: 1px solid #e0e8dd; border-radius: 18px; cursor: pointer; text-align: center; }
+.local-item img { width: 94px; height: 94px; object-fit: contain; }
+.local-item small { color: #258045; text-transform: uppercase; font-size: 9px; }
+.local-item span { font-size: 11px; color: #68736a; }
+.local-hero { background: #fff0d2; border-radius: 24px; padding: 24px; margin-top: 24px; }
+.local-hero > span { font-size: 48px; }
+.local-steps { padding-left: 22px; line-height: 1.7; }
+.local-steps li { margin-bottom: 12px; }
+.local-primary { width: 100%; padding: 15px; border: 0; border-radius: 14px; background: #268c42; color: white; font-weight: 700; cursor: pointer; }
+.local-overlay { position: fixed; inset: 0; z-index: 600; display: grid; place-items: center; padding: 18px; background: #102719a6; backdrop-filter: blur(5px); }
+.local-dialog { width: min(100%,430px); max-height: 85svh; overflow: auto; padding: 24px; border-radius: 24px; background: #fff; box-sizing: border-box; }
+.local-dialog header { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.local-dialog header h2 { margin: 0; font-size: 22px; }
+.local-dialog header button { border: 0; border-radius: 50%; background: #edf2ed; width: 36px; height: 36px; font-size: 25px; cursor: pointer; flex-shrink: 0; }
+.local-row { display: block; width: 100%; box-sizing: border-box; padding: 16px; margin: 12px 0; border: 1px solid #e0e9e0; border-radius: 14px; background: #f8faf7; color: #26372b; text-align: left; }
+button.local-row { cursor: pointer; }
+.local-row[aria-pressed=true] { border-color: #289044; background: #e7f4e6; }
+.local-row p { margin: 5px 0; font-size: 13px; }
+.local-detail-image { display: block; width: 150px; height: 150px; object-fit: contain; margin: 15px auto; }
+.local-stars { display: flex; justify-content: center; gap: 6px; margin-top: 20px; }
+.local-stars button { border: 0; background: none; color: #d89d21; font-size: 36px; cursor: pointer; }
+.local-dialog button:focus-visible, .local-page button:focus-visible { outline: 3px solid #16793a; outline-offset: 3px; }

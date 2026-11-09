@@ -1,0 +1,102 @@
+{
+  "profile": {
+    "customer_id": "u_1042",
+    "display_name": "Masha, second cycle",
+    "cadence_weeks": 2.6,
+    "categories": [
+      "coffee",
+      "dairy"
+    ],
+    "store_engagement": "low",
+    "social_engagement": "low",
+    "fatigue": 0.18,
+    "sponsored_exposures_14d": 1
+  },
+  "decision": {
+    "objective": "qualified_product_trial",
+    "mechanic_family": "personal_finish",
+    "behavioral_lever": "completion",
+    "target_action": "purchase_day_in_window",
+    "window_days": 6,
+    "reinforcement_type": "digital_unlock",
+    "reinforcement_id": "unlock_theme_choice",
+    "reinforcement_cost": 0.0,
+    "uncovered_reward_cost": 0.0,
+    "funding_source": "advertiser",
+    "bid_per_qualified_visit": 32.0,
+    "pacing_multiplier": 0.85,
+    "effective_bid": 27.2,
+    "expected_liability": 8.16,
+    "campaign_budget_snapshot": {
+      "total": 150000.0,
+      "settled_spend": 69100.0,
+      "pending_liability": 6800.0,
+      "available": 74100.0
+    },
+    "p_qvisit_treat": 0.3,
+    "p_qvisit_control": 0.26,
+    "uplift": 0.04,
+    "incrementality_floor": 0.04,
+    "p_billable": 0.3,
+    "p_accept": 0.44,
+    "fading_phase": "confirmation",
+    "frequency_state": {
+      "exposures_14d": 1,
+      "cap": 2
+    },
+    "objective_scores": {
+      "media_net": 8.16,
+      "x5_incremental_value": 4.8,
+      "total": 12.96
+    },
+    "advertiser_id": "brand_07",
+    "campaign_id": "camp_042",
+    "creative_id": "cr_042_a",
+    "candidate_set": [
+      "camp_042/cr_042_a",
+      "camp_058/cr_058_a",
+      "organic",
+      "none"
+    ],
+    "policy_version": "questads_0.2",
+    "decision_seed": 105233,
+    "ghost": null,
+    "status": "active",
+    "decision_id": "dec_1052",
+    "experiment_arm": "serve",
+    "sponsored_result": "filled",
+    "surface_result": "sponsored",
+    "propensity": {
+      "experiment": 0.9,
+      "action_given_serve": 0.51,
+      "creative_given_campaign": 0.5,
+      "logging": 0.2295
+    },
+    "reason_codes": [
+      "previous_route_completed",
+      "reward_cost_stepped_down",
+      "persistence_check",
+      "uplift_at_floor"
+    ]
+  },
+  "creative_copy": {
+    "decision_id": "dec_1052",
+    "title": "Coffee checkpoint",
+    "body": "One more visit and you choose the theme of the next route.",
+    "progress": "1 of 2 checkpoints",
+    "cta": "Continue the route",
+    "sponsored_label": "Supported by the brand"
+  },
+  "route_state": {
+    "route_id": "r_1052",
+    "mechanic_family": "personal_finish",
+    "status": "in_progress",
+    "window_days": 6,
+    "completion": 0.5,
+    "fading_phase": "confirmation",
+    "unlocks": [
+      "theme_choice"
+    ]
+  },
+  "demo_note": "The same user and the same campaign, with the reinforcement reduced from an RUB 18 product to a digital unlock. The masha.json -> masha-cycle2.json pair shows reward fading, and an uplift of 0.04 sits exactly on the threshold."
+}

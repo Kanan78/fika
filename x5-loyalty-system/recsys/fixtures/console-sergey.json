@@ -1,0 +1,61 @@
+{
+  "request_id": "req_3311",
+  "customer_id": "u_3311",
+  "policy_version": "questads_0.2",
+  "experiment_arm": "serve",
+  "incrementality_floor": 0.04,
+  "contribution_margin_rub": 120.0,
+  "candidates": [
+    {
+      "campaign_id": "camp_042",
+      "creative_id": "cr_042_a",
+      "bid": 32.0,
+      "pacing_multiplier": 0.9,
+      "effective_bid": 28.8,
+      "p_qvisit_treat": 0.89,
+      "p_qvisit_control": 0.87,
+      "uplift": 0.02,
+      "p_billable": 0.89,
+      "media_net": 25.63,
+      "x5_incremental_value": 2.4,
+      "total": 28.03,
+      "verdict": "rejected_uplift_below_floor"
+    },
+    {
+      "campaign_id": "camp_071",
+      "creative_id": "cr_071_a",
+      "bid": 36.0,
+      "pacing_multiplier": 0.05,
+      "effective_bid": 1.8,
+      "p_qvisit_treat": 0.88,
+      "p_qvisit_control": 0.87,
+      "uplift": 0.01,
+      "p_billable": 0.88,
+      "media_net": 1.58,
+      "x5_incremental_value": 1.2,
+      "total": 2.78,
+      "verdict": "rejected_pacing_and_floor"
+    },
+    {
+      "campaign_id": null,
+      "creative_id": null,
+      "bid": 0.0,
+      "pacing_multiplier": 0.0,
+      "effective_bid": 0.0,
+      "p_qvisit_treat": 0.89,
+      "p_qvisit_control": 0.87,
+      "uplift": 0.02,
+      "p_billable": 0.0,
+      "media_net": 0.0,
+      "x5_incremental_value": 2.4,
+      "total": 2.4,
+      "verdict": "chosen_organic"
+    }
+  ],
+  "outcome": {
+    "sponsored_result": "no_fill",
+    "surface_result": "organic"
+  },
+  "decision_note": "Campaign brand_07 scores the highest media value — RUB 25.63 — precisely because the visit is nearly certain. The 0.04 incrementality threshold rejects it: a visit that would have happened anyway is not sold to a brand. The user still receives an organic route rather than an empty screen.",
+  "notes": "Synthetic data. Neither X5 economics nor a measured effect."
+}

@@ -1,0 +1,1248 @@
+{
+  "notes": "Independent labelling. Any challenge counts as acceptable when its category appears in the profile's purchase history and its item is missing from some recipe. The rubric admits many decisions and does not repeat the engine's ranking order. Eligible profiles are evaluated in the digital cycle after onboarding, so the run measures RecSys relevance separately from Ads coverage of the first physical gift.",
+  "label_status": "agent_draft",
+  "labelled_on": "2026-09-05",
+  "expert_confirmation": "not performed",
+  "threshold": {
+    "eligible_profiles": 40,
+    "minimum_hits": 28
+  },
+  "eligible": [
+    {
+      "profile_id": "eval-01",
+      "familiar_categories": [
+        "Cold Drinks & Ice Cream",
+        "Ice Cream & Desserts"
+      ],
+      "acceptable_item_ids": [
+        "crystal-icecream-maker",
+        "picnic-cooler"
+      ],
+      "unacceptable_item_ids": [
+        "baker-apron",
+        "barista-machine",
+        "breakfast-pan",
+        "chef-knife",
+        "club-toaster",
+        "dragon-wok",
+        "freezer-chest",
+        "freshness-dome",
+        "fruit-basket",
+        "golden-chef-hat",
+        "legendary-sandwich-press",
+        "magic-fridge"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-02",
+      "familiar_categories": [
+        "Frozen Food",
+        "Cold Drinks & Ice Cream",
+        "Bread & Bakery"
+      ],
+      "acceptable_item_ids": [
+        "club-toaster",
+        "freezer-chest",
+        "picnic-cooler"
+      ],
+      "unacceptable_item_ids": [
+        "baker-apron",
+        "barista-machine",
+        "breakfast-pan",
+        "chef-knife",
+        "crystal-icecream-maker",
+        "dragon-wok",
+        "freshness-dome",
+        "fruit-basket",
+        "golden-chef-hat",
+        "legendary-sandwich-press",
+        "magic-fridge",
+        "master-grill"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-03",
+      "familiar_categories": [
+        "Vegetables & Herbs"
+      ],
+      "acceptable_item_ids": [
+        "vegetable-crate"
+      ],
+      "unacceptable_item_ids": [
+        "baker-apron",
+        "barista-machine",
+        "breakfast-pan",
+        "chef-knife",
+        "club-toaster",
+        "crystal-icecream-maker",
+        "dragon-wok",
+        "freezer-chest",
+        "freshness-dome",
+        "fruit-basket",
+        "golden-chef-hat",
+        "legendary-sandwich-press"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-04",
+      "familiar_categories": [
+        "Fruit",
+        "Coffee & Desserts"
+      ],
+      "acceptable_item_ids": [
+        "barista-machine",
+        "fruit-basket"
+      ],
+      "unacceptable_item_ids": [
+        "baker-apron",
+        "breakfast-pan",
+        "chef-knife",
+        "club-toaster",
+        "crystal-icecream-maker",
+        "dragon-wok",
+        "freezer-chest",
+        "freshness-dome",
+        "golden-chef-hat",
+        "legendary-sandwich-press",
+        "magic-fridge",
+        "master-grill"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-05",
+      "familiar_categories": [
+        "Dairy",
+        "Baking Supplies",
+        "Meat & Sausages"
+      ],
+      "acceptable_item_ids": [
+        "baker-apron",
+        "master-grill"
+      ],
+      "unacceptable_item_ids": [
+        "barista-machine",
+        "breakfast-pan",
+        "chef-knife",
+        "club-toaster",
+        "crystal-icecream-maker",
+        "dragon-wok",
+        "freezer-chest",
+        "freshness-dome",
+        "fruit-basket",
+        "golden-chef-hat",
+        "legendary-sandwich-press",
+        "magic-fridge"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-06",
+      "familiar_categories": [
+        "Noodles & Asian Cuisine"
+      ],
+      "acceptable_item_ids": [
+        "dragon-wok"
+      ],
+      "unacceptable_item_ids": [
+        "baker-apron",
+        "barista-machine",
+        "breakfast-pan",
+        "chef-knife",
+        "club-toaster",
+        "crystal-icecream-maker",
+        "freezer-chest",
+        "freshness-dome",
+        "fruit-basket",
+        "golden-chef-hat",
+        "legendary-sandwich-press",
+        "magic-fridge"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-07",
+      "familiar_categories": [
+        "Coffee & Tea",
+        "Baking Supplies"
+      ],
+      "acceptable_item_ids": [
+        "baker-apron",
+        "travel-mug"
+      ],
+      "unacceptable_item_ids": [
+        "barista-machine",
+        "breakfast-pan",
+        "chef-knife",
+        "club-toaster",
+        "crystal-icecream-maker",
+        "dragon-wok",
+        "freezer-chest",
+        "freshness-dome",
+        "fruit-basket",
+        "golden-chef-hat",
+        "legendary-sandwich-press",
+        "magic-fridge"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-08",
+      "familiar_categories": [
+        "Cold Drinks & Ice Cream",
+        "Dairy",
+        "Baking Supplies"
+      ],
+      "acceptable_item_ids": [
+        "baker-apron",
+        "milk-pitcher",
+        "picnic-cooler"
+      ],
+      "unacceptable_item_ids": [
+        "barista-machine",
+        "breakfast-pan",
+        "chef-knife",
+        "club-toaster",
+        "crystal-icecream-maker",
+        "dragon-wok",
+        "freezer-chest",
+        "freshness-dome",
+        "fruit-basket",
+        "golden-chef-hat",
+        "legendary-sandwich-press",
+        "magic-fridge"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-09",
+      "familiar_categories": [
+        "Groceries & Canned Food"
+      ],
+      "acceptable_item_ids": [
+        "treasure-pantry"
+      ],
+      "unacceptable_item_ids": [
+        "baker-apron",
+        "barista-machine",
+        "breakfast-pan",
+        "chef-knife",
+        "club-toaster",
+        "crystal-icecream-maker",
+        "dragon-wok",
+        "freezer-chest",
+        "freshness-dome",
+        "fruit-basket",
+        "golden-chef-hat",
+        "legendary-sandwich-press"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-10",
+      "familiar_categories": [
+        "Noodles & Asian Cuisine",
+        "Cold Drinks & Ice Cream"
+      ],
+      "acceptable_item_ids": [
+        "picnic-cooler"
+      ],
+      "unacceptable_item_ids": [
+        "baker-apron",
+        "barista-machine",
+        "breakfast-pan",
+        "chef-knife",
+        "club-toaster",
+        "crystal-icecream-maker",
+        "freezer-chest",
+        "freshness-dome",
+        "fruit-basket",
+        "golden-chef-hat",
+        "legendary-sandwich-press",
+        "magic-fridge"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-11",
+      "familiar_categories": [
+        "Cold Drinks & Ice Cream",
+        "Grains, Soups & Sauces",
+        "Noodles & Asian Cuisine"
+      ],
+      "acceptable_item_ids": [
+        "dragon-wok",
+        "picnic-cooler",
+        "royal-cauldron"
+      ],
+      "unacceptable_item_ids": [
+        "baker-apron",
+        "barista-machine",
+        "breakfast-pan",
+        "chef-knife",
+        "club-toaster",
+        "crystal-icecream-maker",
+        "freezer-chest",
+        "freshness-dome",
+        "fruit-basket",
+        "golden-chef-hat",
+        "legendary-sandwich-press",
+        "magic-fridge"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-12",
+      "familiar_categories": [
+        "Vegetables & Herbs"
+      ],
+      "acceptable_item_ids": [
+        "vegetable-crate"
+      ],
+      "unacceptable_item_ids": [
+        "baker-apron",
+        "barista-machine",
+        "breakfast-pan",
+        "chef-knife",
+        "club-toaster",
+        "crystal-icecream-maker",
+        "dragon-wok",
+        "freezer-chest",
+        "freshness-dome",
+        "fruit-basket",
+        "golden-chef-hat",
+        "legendary-sandwich-press"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-13",
+      "familiar_categories": [
+        "Cold Drinks & Ice Cream",
+        "Baking Supplies"
+      ],
+      "acceptable_item_ids": [
+        "baker-apron",
+        "picnic-cooler"
+      ],
+      "unacceptable_item_ids": [
+        "barista-machine",
+        "breakfast-pan",
+        "chef-knife",
+        "club-toaster",
+        "crystal-icecream-maker",
+        "dragon-wok",
+        "freezer-chest",
+        "freshness-dome",
+        "fruit-basket",
+        "golden-chef-hat",
+        "legendary-sandwich-press",
+        "magic-fridge"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-14",
+      "familiar_categories": [
+        "Coffee & Desserts",
+        "Healthy Drinks",
+        "Baking Supplies"
+      ],
+      "acceptable_item_ids": [
+        "baker-apron",
+        "barista-machine",
+        "power-blender"
+      ],
+      "unacceptable_item_ids": [
+        "breakfast-pan",
+        "chef-knife",
+        "club-toaster",
+        "crystal-icecream-maker",
+        "dragon-wok",
+        "freezer-chest",
+        "freshness-dome",
+        "fruit-basket",
+        "golden-chef-hat",
+        "legendary-sandwich-press",
+        "magic-fridge",
+        "master-grill"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-15",
+      "familiar_categories": [
+        "Meat & Sausages"
+      ],
+      "acceptable_item_ids": [
+        "master-grill"
+      ],
+      "unacceptable_item_ids": [
+        "baker-apron",
+        "barista-machine",
+        "breakfast-pan",
+        "chef-knife",
+        "club-toaster",
+        "crystal-icecream-maker",
+        "dragon-wok",
+        "freezer-chest",
+        "freshness-dome",
+        "fruit-basket",
+        "golden-chef-hat",
+        "legendary-sandwich-press"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-16",
+      "familiar_categories": [
+        "Coffee & Desserts",
+        "Fish & Asian Cuisine"
+      ],
+      "acceptable_item_ids": [
+        "barista-machine",
+        "sushi-kit"
+      ],
+      "unacceptable_item_ids": [
+        "baker-apron",
+        "breakfast-pan",
+        "chef-knife",
+        "club-toaster",
+        "crystal-icecream-maker",
+        "dragon-wok",
+        "freezer-chest",
+        "freshness-dome",
+        "fruit-basket",
+        "golden-chef-hat",
+        "legendary-sandwich-press",
+        "magic-fridge"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-17",
+      "familiar_categories": [
+        "Cold Drinks & Ice Cream",
+        "Groceries & Canned Food",
+        "Baking Supplies"
+      ],
+      "acceptable_item_ids": [
+        "baker-apron",
+        "picnic-cooler",
+        "treasure-pantry"
+      ],
+      "unacceptable_item_ids": [
+        "barista-machine",
+        "breakfast-pan",
+        "chef-knife",
+        "club-toaster",
+        "crystal-icecream-maker",
+        "dragon-wok",
+        "freezer-chest",
+        "freshness-dome",
+        "fruit-basket",
+        "golden-chef-hat",
+        "legendary-sandwich-press",
+        "magic-fridge"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-18",
+      "familiar_categories": [
+        "Baking Supplies"
+      ],
+      "acceptable_item_ids": [
+        "baker-apron"
+      ],
+      "unacceptable_item_ids": [
+        "barista-machine",
+        "breakfast-pan",
+        "chef-knife",
+        "club-toaster",
+        "crystal-icecream-maker",
+        "dragon-wok",
+        "freezer-chest",
+        "freshness-dome",
+        "fruit-basket",
+        "golden-chef-hat",
+        "legendary-sandwich-press",
+        "magic-fridge"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-19",
+      "familiar_categories": [
+        "Bread & Bakery",
+        "Healthy Drinks"
+      ],
+      "acceptable_item_ids": [
+        "club-toaster",
+        "power-blender"
+      ],
+      "unacceptable_item_ids": [
+        "baker-apron",
+        "barista-machine",
+        "breakfast-pan",
+        "chef-knife",
+        "crystal-icecream-maker",
+        "dragon-wok",
+        "freezer-chest",
+        "freshness-dome",
+        "fruit-basket",
+        "golden-chef-hat",
+        "legendary-sandwich-press",
+        "magic-fridge"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-20",
+      "familiar_categories": [
+        "Coffee & Desserts",
+        "Baking Supplies",
+        "Grains, Soups & Sauces"
+      ],
+      "acceptable_item_ids": [
+        "baker-apron",
+        "royal-cauldron"
+      ],
+      "unacceptable_item_ids": [
+        "breakfast-pan",
+        "chef-knife",
+        "club-toaster",
+        "crystal-icecream-maker",
+        "dragon-wok",
+        "freezer-chest",
+        "freshness-dome",
+        "fruit-basket",
+        "golden-chef-hat",
+        "legendary-sandwich-press",
+        "magic-fridge",
+        "master-grill"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-21",
+      "familiar_categories": [
+        "Bread & Bakery"
+      ],
+      "acceptable_item_ids": [
+        "club-toaster"
+      ],
+      "unacceptable_item_ids": [
+        "baker-apron",
+        "barista-machine",
+        "breakfast-pan",
+        "chef-knife",
+        "crystal-icecream-maker",
+        "dragon-wok",
+        "freezer-chest",
+        "freshness-dome",
+        "fruit-basket",
+        "golden-chef-hat",
+        "legendary-sandwich-press",
+        "magic-fridge"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-22",
+      "familiar_categories": [
+        "Noodles & Asian Cuisine",
+        "Cold Drinks & Ice Cream"
+      ],
+      "acceptable_item_ids": [
+        "dragon-wok",
+        "picnic-cooler"
+      ],
+      "unacceptable_item_ids": [
+        "baker-apron",
+        "barista-machine",
+        "breakfast-pan",
+        "chef-knife",
+        "club-toaster",
+        "crystal-icecream-maker",
+        "freezer-chest",
+        "freshness-dome",
+        "fruit-basket",
+        "golden-chef-hat",
+        "legendary-sandwich-press",
+        "magic-fridge"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-23",
+      "familiar_categories": [
+        "Bread, Cheese & Deli",
+        "Frozen Food",
+        "Ice Cream & Desserts"
+      ],
+      "acceptable_item_ids": [
+        "crystal-icecream-maker",
+        "freezer-chest",
+        "legendary-sandwich-press"
+      ],
+      "unacceptable_item_ids": [
+        "baker-apron",
+        "barista-machine",
+        "breakfast-pan",
+        "chef-knife",
+        "club-toaster",
+        "dragon-wok",
+        "freshness-dome",
+        "fruit-basket",
+        "golden-chef-hat",
+        "magic-fridge",
+        "master-grill",
+        "milk-pitcher"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-24",
+      "familiar_categories": [
+        "Fish & Asian Cuisine"
+      ],
+      "acceptable_item_ids": [
+        "sushi-kit"
+      ],
+      "unacceptable_item_ids": [
+        "baker-apron",
+        "barista-machine",
+        "breakfast-pan",
+        "chef-knife",
+        "club-toaster",
+        "crystal-icecream-maker",
+        "dragon-wok",
+        "freezer-chest",
+        "freshness-dome",
+        "fruit-basket",
+        "golden-chef-hat",
+        "legendary-sandwich-press"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-25",
+      "familiar_categories": [
+        "Bread, Cheese & Deli",
+        "Noodles & Asian Cuisine"
+      ],
+      "acceptable_item_ids": [
+        "dragon-wok"
+      ],
+      "unacceptable_item_ids": [
+        "baker-apron",
+        "barista-machine",
+        "breakfast-pan",
+        "chef-knife",
+        "club-toaster",
+        "crystal-icecream-maker",
+        "freezer-chest",
+        "freshness-dome",
+        "fruit-basket",
+        "golden-chef-hat",
+        "magic-fridge",
+        "master-grill"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-26",
+      "familiar_categories": [
+        "Bread & Bakery",
+        "Frozen Food",
+        "Baking Supplies"
+      ],
+      "acceptable_item_ids": [
+        "baker-apron",
+        "club-toaster",
+        "freezer-chest"
+      ],
+      "unacceptable_item_ids": [
+        "barista-machine",
+        "breakfast-pan",
+        "chef-knife",
+        "crystal-icecream-maker",
+        "dragon-wok",
+        "freshness-dome",
+        "fruit-basket",
+        "golden-chef-hat",
+        "legendary-sandwich-press",
+        "magic-fridge",
+        "master-grill",
+        "milk-pitcher"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-27",
+      "familiar_categories": [
+        "Dairy"
+      ],
+      "acceptable_item_ids": [
+        "milk-pitcher"
+      ],
+      "unacceptable_item_ids": [
+        "baker-apron",
+        "barista-machine",
+        "breakfast-pan",
+        "chef-knife",
+        "club-toaster",
+        "crystal-icecream-maker",
+        "dragon-wok",
+        "freezer-chest",
+        "freshness-dome",
+        "fruit-basket",
+        "golden-chef-hat",
+        "legendary-sandwich-press"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-28",
+      "familiar_categories": [
+        "Healthy Drinks",
+        "Bread, Cheese & Deli"
+      ],
+      "acceptable_item_ids": [
+        "legendary-sandwich-press",
+        "power-blender"
+      ],
+      "unacceptable_item_ids": [
+        "baker-apron",
+        "barista-machine",
+        "breakfast-pan",
+        "chef-knife",
+        "club-toaster",
+        "crystal-icecream-maker",
+        "dragon-wok",
+        "freezer-chest",
+        "freshness-dome",
+        "fruit-basket",
+        "golden-chef-hat",
+        "magic-fridge"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-29",
+      "familiar_categories": [
+        "Vegetables & Herbs",
+        "Eggs & Breakfast",
+        "Bread & Bakery"
+      ],
+      "acceptable_item_ids": [
+        "breakfast-pan",
+        "club-toaster",
+        "vegetable-crate"
+      ],
+      "unacceptable_item_ids": [
+        "baker-apron",
+        "barista-machine",
+        "chef-knife",
+        "crystal-icecream-maker",
+        "dragon-wok",
+        "freezer-chest",
+        "freshness-dome",
+        "fruit-basket",
+        "golden-chef-hat",
+        "legendary-sandwich-press",
+        "magic-fridge",
+        "master-grill"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-30",
+      "familiar_categories": [
+        "Healthy Drinks"
+      ],
+      "acceptable_item_ids": [
+        "power-blender"
+      ],
+      "unacceptable_item_ids": [
+        "baker-apron",
+        "barista-machine",
+        "breakfast-pan",
+        "chef-knife",
+        "club-toaster",
+        "crystal-icecream-maker",
+        "dragon-wok",
+        "freezer-chest",
+        "freshness-dome",
+        "fruit-basket",
+        "golden-chef-hat",
+        "legendary-sandwich-press"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-31",
+      "familiar_categories": [
+        "Baking Supplies",
+        "Grains, Soups & Sauces"
+      ],
+      "acceptable_item_ids": [
+        "baker-apron",
+        "royal-cauldron"
+      ],
+      "unacceptable_item_ids": [
+        "barista-machine",
+        "breakfast-pan",
+        "chef-knife",
+        "club-toaster",
+        "crystal-icecream-maker",
+        "dragon-wok",
+        "freezer-chest",
+        "freshness-dome",
+        "fruit-basket",
+        "golden-chef-hat",
+        "legendary-sandwich-press",
+        "magic-fridge"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-32",
+      "familiar_categories": [
+        "Coffee & Desserts",
+        "Ice Cream & Desserts",
+        "Bread & Bakery"
+      ],
+      "acceptable_item_ids": [
+        "barista-machine",
+        "club-toaster",
+        "crystal-icecream-maker"
+      ],
+      "unacceptable_item_ids": [
+        "baker-apron",
+        "breakfast-pan",
+        "chef-knife",
+        "dragon-wok",
+        "freezer-chest",
+        "freshness-dome",
+        "fruit-basket",
+        "golden-chef-hat",
+        "legendary-sandwich-press",
+        "magic-fridge",
+        "master-grill",
+        "milk-pitcher"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-33",
+      "familiar_categories": [
+        "Noodles & Asian Cuisine"
+      ],
+      "acceptable_item_ids": [
+        "dragon-wok"
+      ],
+      "unacceptable_item_ids": [
+        "baker-apron",
+        "barista-machine",
+        "breakfast-pan",
+        "chef-knife",
+        "club-toaster",
+        "crystal-icecream-maker",
+        "freezer-chest",
+        "freshness-dome",
+        "fruit-basket",
+        "golden-chef-hat",
+        "legendary-sandwich-press",
+        "magic-fridge"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-34",
+      "familiar_categories": [
+        "Bread & Bakery",
+        "Eggs & Breakfast"
+      ],
+      "acceptable_item_ids": [
+        "breakfast-pan",
+        "club-toaster"
+      ],
+      "unacceptable_item_ids": [
+        "baker-apron",
+        "barista-machine",
+        "chef-knife",
+        "crystal-icecream-maker",
+        "dragon-wok",
+        "freezer-chest",
+        "freshness-dome",
+        "fruit-basket",
+        "golden-chef-hat",
+        "legendary-sandwich-press",
+        "magic-fridge",
+        "master-grill"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-35",
+      "familiar_categories": [
+        "Ice Cream & Desserts",
+        "Fruit",
+        "Grains, Soups & Sauces"
+      ],
+      "acceptable_item_ids": [
+        "fruit-basket",
+        "royal-cauldron"
+      ],
+      "unacceptable_item_ids": [
+        "baker-apron",
+        "barista-machine",
+        "breakfast-pan",
+        "chef-knife",
+        "club-toaster",
+        "dragon-wok",
+        "freezer-chest",
+        "freshness-dome",
+        "golden-chef-hat",
+        "legendary-sandwich-press",
+        "magic-fridge",
+        "master-grill"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-36",
+      "familiar_categories": [
+        "Fruit"
+      ],
+      "acceptable_item_ids": [
+        "fruit-basket"
+      ],
+      "unacceptable_item_ids": [
+        "baker-apron",
+        "barista-machine",
+        "breakfast-pan",
+        "chef-knife",
+        "club-toaster",
+        "crystal-icecream-maker",
+        "dragon-wok",
+        "freezer-chest",
+        "freshness-dome",
+        "golden-chef-hat",
+        "legendary-sandwich-press",
+        "magic-fridge"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-37",
+      "familiar_categories": [
+        "Snacks & Nuts",
+        "Fruit"
+      ],
+      "acceptable_item_ids": [
+        "fruit-basket",
+        "snack-bowl"
+      ],
+      "unacceptable_item_ids": [
+        "baker-apron",
+        "barista-machine",
+        "breakfast-pan",
+        "chef-knife",
+        "club-toaster",
+        "crystal-icecream-maker",
+        "dragon-wok",
+        "freezer-chest",
+        "freshness-dome",
+        "golden-chef-hat",
+        "legendary-sandwich-press",
+        "magic-fridge"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-38",
+      "familiar_categories": [
+        "Healthy Drinks",
+        "Eggs & Breakfast",
+        "Groceries & Canned Food"
+      ],
+      "acceptable_item_ids": [
+        "breakfast-pan",
+        "power-blender",
+        "treasure-pantry"
+      ],
+      "unacceptable_item_ids": [
+        "baker-apron",
+        "barista-machine",
+        "chef-knife",
+        "club-toaster",
+        "crystal-icecream-maker",
+        "dragon-wok",
+        "freezer-chest",
+        "freshness-dome",
+        "fruit-basket",
+        "golden-chef-hat",
+        "legendary-sandwich-press",
+        "magic-fridge"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-39",
+      "familiar_categories": [
+        "Frozen Food"
+      ],
+      "acceptable_item_ids": [
+        "freezer-chest"
+      ],
+      "unacceptable_item_ids": [
+        "baker-apron",
+        "barista-machine",
+        "breakfast-pan",
+        "chef-knife",
+        "club-toaster",
+        "crystal-icecream-maker",
+        "dragon-wok",
+        "freshness-dome",
+        "fruit-basket",
+        "golden-chef-hat",
+        "legendary-sandwich-press",
+        "magic-fridge"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-40",
+      "familiar_categories": [
+        "Groceries & Canned Food",
+        "Bread, Cheese & Deli"
+      ],
+      "acceptable_item_ids": [
+        "legendary-sandwich-press"
+      ],
+      "unacceptable_item_ids": [
+        "baker-apron",
+        "barista-machine",
+        "breakfast-pan",
+        "chef-knife",
+        "club-toaster",
+        "crystal-icecream-maker",
+        "dragon-wok",
+        "freezer-chest",
+        "freshness-dome",
+        "fruit-basket",
+        "golden-chef-hat",
+        "magic-fridge"
+      ],
+      "expected_status": "offer",
+      "rationale": "The category is in the history and the item is missing from a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    }
+  ],
+  "refusal": [
+    {
+      "profile_id": "eval-refusal-01",
+      "expected_status": "no_action",
+      "expected_reason_codes": [
+        "no_purchase_history"
+      ],
+      "rationale": "The purchase history is empty.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-refusal-02",
+      "expected_status": "no_action",
+      "expected_reason_codes": [
+        "no_purchase_history"
+      ],
+      "rationale": "Free lines do not create a purchase day.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-refusal-03",
+      "expected_status": "no_action",
+      "expected_reason_codes": [
+        "category_not_in_history"
+      ],
+      "rationale": "No purchased category maps to an item in a recipe.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-refusal-04",
+      "expected_status": "no_action",
+      "expected_reason_codes": [
+        "sku_out_of_stock"
+      ],
+      "rationale": "The category has no gift SKU in stock.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-refusal-05",
+      "expected_status": "no_action",
+      "expected_reason_codes": [
+        "promise_already_outstanding"
+      ],
+      "rationale": "A new promise is not shown on top of an active one.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-refusal-06",
+      "expected_status": "no_action",
+      "expected_reason_codes": [
+        "no_purchase_history"
+      ],
+      "rationale": "Purchases outside the history window do not make a category familiar.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-refusal-07",
+      "expected_status": "no_action",
+      "expected_reason_codes": [
+        "no_purchase_history"
+      ],
+      "rationale": "A returned receipt does not create a purchase day.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    },
+    {
+      "profile_id": "eval-refusal-08",
+      "expected_status": "no_action",
+      "expected_reason_codes": [
+        "sku_out_of_stock"
+      ],
+      "rationale": "The category has no funded product; the single item comes without a gift.",
+      "label_status": "agent_draft",
+      "labelled_on": "2026-09-05"
+    }
+  ]
+}

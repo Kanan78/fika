@@ -1,0 +1,33 @@
+{
+  "users": 1000,
+  "seed": 20260905,
+  "operations_cost_per_offer_kopecks": 120,
+  "name": "Positive effect",
+  "notes": "The game adds purchases, the brand partly funds the reward, and redemption is moderate.",
+  "hidden": {
+    "base_purchase_probability": 0.34,
+    "game_uplift_probability": 0.09,
+    "qualification_probability_given_purchase": 0.86,
+    "coupon_craft_probability": 0.42,
+    "coupon_redemption_probability": 0.55,
+    "fraud_share": 0.02
+  },
+  "economics": {
+    "incremental_margin_per_purchase_kopecks": 9500,
+    "advertiser_payment_multiplier": 1.0,
+    "supplier_subsidy_multiplier": 1.0,
+    "fraud_loss_per_case_kopecks": 4000
+  },
+  "cycles": 4,
+  "start_empty_inventory": false,
+  "missing_history_share": 0.1,
+  "budget": {
+    "coupon_fund_kopecks": 1000000,
+    "coupon_settled_kopecks": 0,
+    "coupon_reserved_kopecks": 0,
+    "physical_fund_kopecks": 2500000,
+    "physical_settled_kopecks": 0,
+    "physical_reserved_kopecks": 0
+  },
+  "initial_state_note": "A mix of empty and seeded inventories from 40 synthetic templates; every starting copy reserves RUB 2.50. The product is paid in full on issue; the other three copies are not assumed automatically."
+}

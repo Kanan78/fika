@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://x5-checkpoint/recsys/action.schema.json",
+  "title": "QuestRank decision",
+  "description": "Contract between the allocator and the client. A decision has three independent levels: experiment assignment, advertising allocation result, and the surface ultimately shown to the user. Source: sections 8.3 and 8.4 of the project description and Material 6 of the product materials; keep all three locations aligned.",
+  "type": "object",
+  "required": ["decision_id", "experiment_arm", "sponsored_result", "surface_result", "propensity", "reason_codes"],
+  "additionalProperties": false,
+  "properties": {
+    "decision_id": { "type": "string", "pattern": "^dec_[0-9]+$" },
+
+    "experiment_arm": {
+      "enum": ["holdout", "serve"],
+      "description": "Random assignment stable at user level. Holdout is the control: no treatment is shown, but a ghost decision is recorded."
+    },
+    "sponsored_result": {
+      "enum": ["filled", "no_fill", "not_applicable"],
+      "description": "Advertising allocation result. no_fill means no campaign passed the budget, quality, or incrementality threshold."
+    },
+    "surface_result": {
+      "enum": ["sponsored", "organic", "none"],
+      "description": "What the user sees. no_fill and organic are compatible: there is no ad, while the product surface remains available."
+    },
+
+    "propensity": {
+      "type": "object",
+      "required": ["experiment", "action_given_serve", "logging"],
+      "additionalProperties": false,
+      "description": "logging = experiment × action_given_serve × creative_given_campaign",
+      "properties": {
+        "experiment": { "type": "number", "minimum": 0, "maximum": 1 },
+        "action_given_serve": { "type": "number", "minimum": 0, "maximum": 1 },
+        "creative_given_campaign": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+        "logging": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+
+    "advertiser_id": { "type": ["string", "null"] },
+    "campaign_id": { "type": ["string", "null"] },
+    "creative_id": { "type": ["string", "null"] },
+    "objective": { "enum": ["qualified_product_trial", "category_reactivation", "repeat_purchase", "none"] },
+
+    "mechanic_family": { "enum": ["personal_finish", "store_coop", "family_relay", "organic_progress", "none"] },
+    "behavioral_lever": { "enum": ["completion", "collective_progress", "reciprocity", "mastery", "none"] },
+    "target_action": { "enum": ["purchase_day_in_window", "verified_household_visit", "none"] },
+    "window_days": { "type": ["integer", "null"], "minimum": 1, "maximum": 14 },
+
+    "reinforcement_type": { "enum": ["supplier_trial", "points", "digital_unlock", "digital_vote_token", "local_privilege", "progress_only", "none"] },
+    "reinforcement_id": { "type": ["string", "null"] },
+    "reinforcement_cost": { "type": "number", "minimum": 0 },
+    "uncovered_reward_cost": { "type": "number", "minimum": 0, "description": "Part of the reward cost not covered by the advertiser; only this amount is subtracted from the score." },
+    "funding_source": { "enum": ["advertiser", "promo_fund", "own_margin", "none"] },
+
+    "bid_per_qualified_visit": { "type": "number", "minimum": 0, "description": "Supplied by the advertiser, not predicted by the model." },
+    "pacing_multiplier": { "type": "number", "minimum": 0 },
+    "effective_bid": { "type": "number", "minimum": 0 },
+    "expected_liability": { "type": "number", "minimum": 0, "description": "p_billable × effective_bid; reserved until the attribution window matures." },
+    "campaign_budget_snapshot": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "total": { "type": "number", "minimum": 0 },
+        "settled_spend": { "type": "number", "minimum": 0 },
+        "pending_liability": { "type": "number", "minimum": 0 },
+        "available": { "type": "number", "minimum": 0 }
+      }
+    },
+
+    "p_qvisit_treat": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+    "p_qvisit_control": { "type": ["number", "null"], "minimum": 0, "maximum": 1, "description": "Learned from a randomized holdout, not from pooled history." },
+    "uplift": { "type": ["number", "null"], "description": "p_qvisit_treat − p_qvisit_control" },
+    "incrementality_floor": { "type": ["number", "null"], "minimum": 0 },
+    "p_billable": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+    "p_accept": { "type": ["number", "null"], "minimum": 0, "maximum": 1, "description": "Funnel diagnostic; not included in the score." },
+
+    "fading_phase": { "enum": ["onboarding", "confirmation", "persistence", "maintain", "rotate", "none"] },
+    "frequency_state": { "type": ["object", "null"], "additionalProperties": true },
+
+    "objective_scores": {
+      "type": ["object", "null"],
+      "required": ["media_net", "x5_incremental_value", "total"],
+      "additionalProperties": false,
+      "description": "All values are in rubles, with no conversion factors.",
+      "properties": {
+        "media_net": { "type": "number", "description": "p_billable × effective_bid − uncovered_reward_cost" },
+        "x5_incremental_value": { "type": "number", "description": "uplift × contribution margin" },
+        "total": { "type": "number" }
+      }
+    },
+
+    "candidate_set": { "type": ["array", "null"], "items": { "type": "string" }, "description": "Complete candidate set at decision time." },
+    "policy_version": { "type": "string" },
+    "decision_seed": { "type": ["integer", "null"] },
+    "ghost": {
+      "type": ["object", "null"],
+      "additionalProperties": true,
+      "description": "What the policy would have shown to the holdout. Contains no outcome: a counterfactual result cannot be inferred from the ghost record."
+    },
+
+    "status": { "enum": ["active", "delayed", "blocked"] },
+    "reason_codes": { "type": "array", "items": { "type": "string" } }
+  }
+}

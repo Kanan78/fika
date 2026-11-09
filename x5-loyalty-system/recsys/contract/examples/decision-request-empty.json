@@ -1,0 +1,525 @@
+{
+  "contract_version": 2,
+  "request_id": "req-demo-decision-empty",
+  "now_ms": 1788598800000,
+  "profile": {
+    "snapshot_version": 2,
+    "profile_id": "demo-empty",
+    "label": "New member, empty inventory (synthetic profile)",
+    "synthetic": true,
+    "receipts": [
+      {
+        "receipt_id": "rcp-empty-001",
+        "purchased_at_ms": 1788339600000,
+        "store_id": "store-demo-1",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      },
+      {
+        "receipt_id": "rcp-empty-002",
+        "purchased_at_ms": 1787562000000,
+        "store_id": "store-demo-1",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-bread-500",
+            "category": "Bread & Bakery",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 5400
+          }
+        ]
+      },
+      {
+        "receipt_id": "rcp-empty-003",
+        "purchased_at_ms": 1786784400000,
+        "store_id": "store-demo-1",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-coffee-250",
+            "category": "Coffee & Tea",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 32900
+          }
+        ]
+      }
+    ],
+    "inventory": [],
+    "issued_rewards": [],
+    "processed_event_ids": [],
+    "active_coupon": null,
+    "outstanding_promise": null,
+    "progress": {
+      "completed_recipe_ids": [],
+      "avatar_level": 0,
+      "redeemed_savings_28d_kopecks": 0
+    },
+    "referral": {
+      "invited_by_profile_id": null,
+      "invited_at_ms": null,
+      "had_confirmed_purchase_before_invite": false,
+      "inviter_rewards_in_window": 0
+    },
+    "risk_signals": {
+      "device_id": "device-demo-1",
+      "household_id": null,
+      "account_age_days": 45,
+      "confirmed_purchase_days": 3
+    }
+  },
+  "game": {
+    "craft_size": 4,
+    "items": [
+      {
+        "id": "club-toaster",
+        "name": "Clubhouse Toaster",
+        "rarity": "common",
+        "category": "Bread & Bakery"
+      },
+      {
+        "id": "milk-pitcher",
+        "name": "Milk Pitcher",
+        "rarity": "common",
+        "category": "Dairy"
+      },
+      {
+        "id": "fruit-basket",
+        "name": "Fruit Basket",
+        "rarity": "common",
+        "category": "Fruit"
+      },
+      {
+        "id": "vegetable-crate",
+        "name": "Vegetable Crate",
+        "rarity": "common",
+        "category": "Vegetables & Herbs"
+      },
+      {
+        "id": "travel-mug",
+        "name": "Travel Mug",
+        "rarity": "common",
+        "category": "Coffee & Tea"
+      },
+      {
+        "id": "snack-bowl",
+        "name": "Snack Bowl",
+        "rarity": "common",
+        "category": "Snacks & Nuts"
+      },
+      {
+        "id": "breakfast-pan",
+        "name": "Breakfast Pan",
+        "rarity": "common",
+        "category": "Eggs & Breakfast"
+      },
+      {
+        "id": "baker-apron",
+        "name": "Baker's Apron",
+        "rarity": "common",
+        "category": "Baking Supplies"
+      },
+      {
+        "id": "chef-knife",
+        "name": "Chef's Knife",
+        "rarity": "epic",
+        "category": "Fresh Food"
+      },
+      {
+        "id": "freezer-chest",
+        "name": "Freezer Chest",
+        "rarity": "epic",
+        "category": "Frozen Food"
+      },
+      {
+        "id": "power-blender",
+        "name": "Power Blender",
+        "rarity": "epic",
+        "category": "Healthy Drinks"
+      },
+      {
+        "id": "master-grill",
+        "name": "Master's Grill",
+        "rarity": "epic",
+        "category": "Meat & Sausages"
+      },
+      {
+        "id": "sushi-kit",
+        "name": "Sushi Kit",
+        "rarity": "epic",
+        "category": "Fish & Asian Cuisine"
+      },
+      {
+        "id": "barista-machine",
+        "name": "Barista Machine",
+        "rarity": "epic",
+        "category": "Coffee & Desserts"
+      },
+      {
+        "id": "pizza-oven",
+        "name": "Pizzaiolo Oven",
+        "rarity": "epic",
+        "category": "Pizza & Ready Meals"
+      },
+      {
+        "id": "picnic-cooler",
+        "name": "Picnic Cooler",
+        "rarity": "epic",
+        "category": "Cold Drinks & Ice Cream"
+      },
+      {
+        "id": "golden-chef-hat",
+        "name": "Golden Chef's Hat",
+        "rarity": "legendary",
+        "category": "Ready Meals"
+      },
+      {
+        "id": "magic-fridge",
+        "name": "Magic Fridge",
+        "rarity": "legendary",
+        "category": "Favourite Buys"
+      },
+      {
+        "id": "royal-cauldron",
+        "name": "Royal Cauldron",
+        "rarity": "legendary",
+        "category": "Grains, Soups & Sauces"
+      },
+      {
+        "id": "dragon-wok",
+        "name": "Dragon Wok",
+        "rarity": "legendary",
+        "category": "Noodles & Asian Cuisine"
+      },
+      {
+        "id": "crystal-icecream-maker",
+        "name": "Crystal Ice Cream Maker",
+        "rarity": "legendary",
+        "category": "Ice Cream & Desserts"
+      },
+      {
+        "id": "legendary-sandwich-press",
+        "name": "Perfect Sandwich Press",
+        "rarity": "legendary",
+        "category": "Bread, Cheese & Deli"
+      },
+      {
+        "id": "treasure-pantry",
+        "name": "Pantry Chest",
+        "rarity": "legendary",
+        "category": "Groceries & Canned Food"
+      },
+      {
+        "id": "freshness-dome",
+        "name": "Freshness Dome",
+        "rarity": "legendary",
+        "category": "Vegetables, Fruit & Herbs"
+      }
+    ],
+    "recipes": [
+      {
+        "id": "breakfast",
+        "title": "Good Morning",
+        "category": "Breakfast, bakery and hot drinks",
+        "item_ids": [
+          "club-toaster",
+          "milk-pitcher",
+          "travel-mug",
+          "breakfast-pan",
+          "barista-machine",
+          "baker-apron",
+          "fruit-basket"
+        ]
+      },
+      {
+        "id": "fresh",
+        "title": "Fresh Pick",
+        "category": "Vegetables, fruit and healthy food",
+        "item_ids": [
+          "fruit-basket",
+          "vegetable-crate",
+          "power-blender",
+          "freshness-dome",
+          "milk-pitcher",
+          "breakfast-pan"
+        ]
+      },
+      {
+        "id": "movie",
+        "title": "No-Cook Evening",
+        "category": "Snacks, drinks and ready meals",
+        "item_ids": [
+          "snack-bowl",
+          "pizza-oven",
+          "picnic-cooler",
+          "legendary-sandwich-press",
+          "freezer-chest"
+        ]
+      },
+      {
+        "id": "asian",
+        "title": "Asian Dinner",
+        "category": "Fish, rice, noodles and Asian sauces",
+        "item_ids": [
+          "sushi-kit",
+          "dragon-wok",
+          "royal-cauldron",
+          "chef-knife",
+          "vegetable-crate",
+          "treasure-pantry"
+        ]
+      },
+      {
+        "id": "chef",
+        "title": "Chef's Dinner",
+        "category": "Meat, fresh food and cooking",
+        "item_ids": [
+          "chef-knife",
+          "master-grill",
+          "golden-chef-hat",
+          "vegetable-crate",
+          "magic-fridge",
+          "royal-cauldron"
+        ]
+      },
+      {
+        "id": "dessert",
+        "title": "Sweet Break",
+        "category": "Desserts, coffee and baking supplies",
+        "item_ids": [
+          "baker-apron",
+          "barista-machine",
+          "crystal-icecream-maker",
+          "milk-pitcher",
+          "fruit-basket",
+          "travel-mug"
+        ]
+      },
+      {
+        "id": "pantry",
+        "title": "Home Pantry",
+        "category": "Groceries, frozen food and long-life products",
+        "item_ids": [
+          "treasure-pantry",
+          "freezer-chest",
+          "magic-fridge",
+          "picnic-cooler",
+          "club-toaster",
+          "legendary-sandwich-press"
+        ]
+      }
+    ]
+  },
+  "game_features": {
+    "inventory_total": 0,
+    "inventory_distinct": 0,
+    "duplicate_item_ids": [],
+    "recipe_progress": [
+      {
+        "recipe_id": "breakfast",
+        "matched_count": 0,
+        "owned_item_ids": [],
+        "missing_item_ids": [
+          "club-toaster",
+          "milk-pitcher",
+          "travel-mug",
+          "breakfast-pan",
+          "barista-machine",
+          "baker-apron",
+          "fruit-basket"
+        ]
+      },
+      {
+        "recipe_id": "fresh",
+        "matched_count": 0,
+        "owned_item_ids": [],
+        "missing_item_ids": [
+          "fruit-basket",
+          "vegetable-crate",
+          "power-blender",
+          "freshness-dome",
+          "milk-pitcher",
+          "breakfast-pan"
+        ]
+      },
+      {
+        "recipe_id": "movie",
+        "matched_count": 0,
+        "owned_item_ids": [],
+        "missing_item_ids": [
+          "snack-bowl",
+          "pizza-oven",
+          "picnic-cooler",
+          "legendary-sandwich-press",
+          "freezer-chest"
+        ]
+      },
+      {
+        "recipe_id": "asian",
+        "matched_count": 0,
+        "owned_item_ids": [],
+        "missing_item_ids": [
+          "sushi-kit",
+          "dragon-wok",
+          "royal-cauldron",
+          "chef-knife",
+          "vegetable-crate",
+          "treasure-pantry"
+        ]
+      },
+      {
+        "recipe_id": "chef",
+        "matched_count": 0,
+        "owned_item_ids": [],
+        "missing_item_ids": [
+          "chef-knife",
+          "master-grill",
+          "golden-chef-hat",
+          "vegetable-crate",
+          "magic-fridge",
+          "royal-cauldron"
+        ]
+      },
+      {
+        "recipe_id": "dessert",
+        "matched_count": 0,
+        "owned_item_ids": [],
+        "missing_item_ids": [
+          "baker-apron",
+          "barista-machine",
+          "crystal-icecream-maker",
+          "milk-pitcher",
+          "fruit-basket",
+          "travel-mug"
+        ]
+      },
+      {
+        "recipe_id": "pantry",
+        "matched_count": 0,
+        "owned_item_ids": [],
+        "missing_item_ids": [
+          "treasure-pantry",
+          "freezer-chest",
+          "magic-fridge",
+          "picnic-cooler",
+          "club-toaster",
+          "legendary-sandwich-press"
+        ]
+      }
+    ]
+  },
+  "budget": {
+    "coupon_fund_kopecks": 1000000,
+    "coupon_settled_kopecks": 0,
+    "coupon_reserved_kopecks": 0,
+    "physical_fund_kopecks": 2500000,
+    "physical_settled_kopecks": 0,
+    "physical_reserved_kopecks": 0
+  },
+  "ads": {
+    "campaigns": [
+      {
+        "campaign_id": "camp_042",
+        "remaining_budget_kopecks": 8240000,
+        "reserved_kopecks": 0,
+        "settled_kopecks": 0,
+        "frequency_cap_14d": 2
+      },
+      {
+        "campaign_id": "camp_067",
+        "remaining_budget_kopecks": 6400000,
+        "reserved_kopecks": 0,
+        "settled_kopecks": 0,
+        "frequency_cap_14d": 2
+      },
+      {
+        "campaign_id": "camp_058",
+        "remaining_budget_kopecks": 7120000,
+        "reserved_kopecks": 0,
+        "settled_kopecks": 0,
+        "frequency_cap_14d": 3
+      },
+      {
+        "campaign_id": "camp_063",
+        "remaining_budget_kopecks": 5080000,
+        "reserved_kopecks": 0,
+        "settled_kopecks": 0,
+        "frequency_cap_14d": 2
+      },
+      {
+        "campaign_id": "camp_071",
+        "remaining_budget_kopecks": 40000,
+        "reserved_kopecks": 0,
+        "settled_kopecks": 0,
+        "frequency_cap_14d": 2
+      },
+      {
+        "campaign_id": "camp_080",
+        "remaining_budget_kopecks": 4750000,
+        "reserved_kopecks": 0,
+        "settled_kopecks": 0,
+        "frequency_cap_14d": 2
+      },
+      {
+        "campaign_id": "camp_084",
+        "remaining_budget_kopecks": 6830000,
+        "reserved_kopecks": 0,
+        "settled_kopecks": 0,
+        "frequency_cap_14d": 2
+      },
+      {
+        "campaign_id": "camp_088",
+        "remaining_budget_kopecks": 7410000,
+        "reserved_kopecks": 0,
+        "settled_kopecks": 0,
+        "frequency_cap_14d": 2
+      },
+      {
+        "campaign_id": "camp_092",
+        "remaining_budget_kopecks": 8860000,
+        "reserved_kopecks": 0,
+        "settled_kopecks": 0,
+        "frequency_cap_14d": 2
+      },
+      {
+        "campaign_id": "camp_096",
+        "remaining_budget_kopecks": 5190000,
+        "reserved_kopecks": 0,
+        "settled_kopecks": 0,
+        "frequency_cap_14d": 2
+      },
+      {
+        "campaign_id": "camp_100",
+        "remaining_budget_kopecks": 9640000,
+        "reserved_kopecks": 0,
+        "settled_kopecks": 0,
+        "frequency_cap_14d": 2
+      },
+      {
+        "campaign_id": "camp_104",
+        "remaining_budget_kopecks": 5820000,
+        "reserved_kopecks": 0,
+        "settled_kopecks": 0,
+        "frequency_cap_14d": 2
+      },
+      {
+        "campaign_id": "camp_108",
+        "remaining_budget_kopecks": 5270000,
+        "reserved_kopecks": 0,
+        "settled_kopecks": 0,
+        "frequency_cap_14d": 2
+      }
+    ],
+    "exposures": [],
+    "billings": []
+  }
+}

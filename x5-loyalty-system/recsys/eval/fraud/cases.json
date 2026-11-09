@@ -1,0 +1,3435 @@
+{
+  "notes": "Calibration keeps the original scenarios. Final is a separately authored challenge set with new feature combinations, legitimate ambiguous cases and concealed abuse. It is not a random population holdout; labels remain agent_draft.",
+  "threshold_source": "recsys/engine/data/policy.json, risk section",
+  "threshold_fixed_before_final_scoring": true,
+  "label_status": "agent_draft",
+  "labelled_on": "2026-09-05",
+  "cases": [
+    {
+      "case_id": "legit_regular-001",
+      "split": "calibration",
+      "label": "legitimate",
+      "description": "Regular customer, one receipt, confirmed history",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "p-legit-1",
+        "label": "p-legit-1",
+        "synthetic": true,
+        "receipts": [
+          {
+            "receipt_id": "r1-a",
+            "purchased_at_ms": 1787821200000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          },
+          {
+            "receipt_id": "r1-b",
+            "purchased_at_ms": 1788253200000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          }
+        ],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": null,
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "device-p-legit-1",
+          "household_id": null,
+          "account_age_days": 180,
+          "confirmed_purchase_days": 3
+        }
+      },
+      "receipt": {
+        "receipt_id": "r1-new",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "legit_regular-002",
+      "split": "calibration",
+      "label": "legitimate",
+      "description": "Regular customer, one receipt, confirmed history",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "p-legit-2",
+        "label": "p-legit-2",
+        "synthetic": true,
+        "receipts": [
+          {
+            "receipt_id": "r2-a",
+            "purchased_at_ms": 1787821200000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          },
+          {
+            "receipt_id": "r2-b",
+            "purchased_at_ms": 1788253200000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          }
+        ],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": null,
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "device-p-legit-2",
+          "household_id": null,
+          "account_age_days": 180,
+          "confirmed_purchase_days": 3
+        }
+      },
+      "receipt": {
+        "receipt_id": "r2-new",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "legit_regular-003",
+      "split": "calibration",
+      "label": "legitimate",
+      "description": "Regular customer, one receipt, confirmed history",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "p-legit-3",
+        "label": "p-legit-3",
+        "synthetic": true,
+        "receipts": [
+          {
+            "receipt_id": "r3-a",
+            "purchased_at_ms": 1787821200000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          },
+          {
+            "receipt_id": "r3-b",
+            "purchased_at_ms": 1788253200000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          }
+        ],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": null,
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "device-p-legit-3",
+          "household_id": null,
+          "account_age_days": 180,
+          "confirmed_purchase_days": 3
+        }
+      },
+      "receipt": {
+        "receipt_id": "r3-new",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "legit_regular-004",
+      "split": "calibration",
+      "label": "legitimate",
+      "description": "Regular customer, one receipt, confirmed history",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "p-legit-4",
+        "label": "p-legit-4",
+        "synthetic": true,
+        "receipts": [
+          {
+            "receipt_id": "r4-a",
+            "purchased_at_ms": 1787821200000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          },
+          {
+            "receipt_id": "r4-b",
+            "purchased_at_ms": 1788253200000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          }
+        ],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": null,
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "device-p-legit-4",
+          "household_id": null,
+          "account_age_days": 180,
+          "confirmed_purchase_days": 3
+        }
+      },
+      "receipt": {
+        "receipt_id": "r4-new",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "legit_family-005",
+      "split": "calibration",
+      "label": "legitimate",
+      "description": "Legitimate family sharing a device with different purchases",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "p-family-5",
+        "label": "p-family-5",
+        "synthetic": true,
+        "receipts": [
+          {
+            "receipt_id": "f5-a",
+            "purchased_at_ms": 1787907600000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          },
+          {
+            "receipt_id": "f5-b",
+            "purchased_at_ms": 1788339600000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          }
+        ],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": null,
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "device-p-family-5",
+          "household_id": "household-1",
+          "account_age_days": 180,
+          "confirmed_purchase_days": 3
+        }
+      },
+      "receipt": {
+        "receipt_id": "f5-new",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "legit_family-006",
+      "split": "calibration",
+      "label": "legitimate",
+      "description": "Legitimate family sharing a device with different purchases",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "p-family-6",
+        "label": "p-family-6",
+        "synthetic": true,
+        "receipts": [
+          {
+            "receipt_id": "f6-a",
+            "purchased_at_ms": 1787907600000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          },
+          {
+            "receipt_id": "f6-b",
+            "purchased_at_ms": 1788339600000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          }
+        ],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": null,
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "device-p-family-6",
+          "household_id": "household-2",
+          "account_age_days": 180,
+          "confirmed_purchase_days": 3
+        }
+      },
+      "receipt": {
+        "receipt_id": "f6-new",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "legit_family-007",
+      "split": "calibration",
+      "label": "legitimate",
+      "description": "Legitimate family sharing a device with different purchases",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "p-family-7",
+        "label": "p-family-7",
+        "synthetic": true,
+        "receipts": [
+          {
+            "receipt_id": "f7-a",
+            "purchased_at_ms": 1787907600000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          },
+          {
+            "receipt_id": "f7-b",
+            "purchased_at_ms": 1788339600000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          }
+        ],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": null,
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "device-p-family-7",
+          "household_id": "household-3",
+          "account_age_days": 180,
+          "confirmed_purchase_days": 3
+        }
+      },
+      "receipt": {
+        "receipt_id": "f7-new",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "legit_family-008",
+      "split": "calibration",
+      "label": "legitimate",
+      "description": "Legitimate family sharing a device with different purchases",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "p-family-8",
+        "label": "p-family-8",
+        "synthetic": true,
+        "receipts": [
+          {
+            "receipt_id": "f8-a",
+            "purchased_at_ms": 1787907600000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          },
+          {
+            "receipt_id": "f8-b",
+            "purchased_at_ms": 1788339600000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          }
+        ],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": null,
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "device-p-family-8",
+          "household_id": "household-0",
+          "account_age_days": 180,
+          "confirmed_purchase_days": 3
+        }
+      },
+      "receipt": {
+        "receipt_id": "f8-new",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "legit_family_split-009",
+      "split": "calibration",
+      "label": "legitimate",
+      "description": "Family, two receipts on one day: till and delivery",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "p-split-9",
+        "label": "p-split-9",
+        "synthetic": true,
+        "receipts": [
+          {
+            "receipt_id": "s9-a",
+            "purchased_at_ms": 1788426000000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          },
+          {
+            "receipt_id": "s9-b",
+            "purchased_at_ms": 1788436800000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          }
+        ],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": null,
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "device-p-split-9",
+          "household_id": "household-1",
+          "account_age_days": 180,
+          "confirmed_purchase_days": 3
+        }
+      },
+      "receipt": {
+        "receipt_id": "s9-new",
+        "purchased_at_ms": 1788444000000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "legit_family_split-010",
+      "split": "calibration",
+      "label": "legitimate",
+      "description": "Family, two receipts on one day: till and delivery",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "p-split-10",
+        "label": "p-split-10",
+        "synthetic": true,
+        "receipts": [
+          {
+            "receipt_id": "s10-a",
+            "purchased_at_ms": 1788426000000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          },
+          {
+            "receipt_id": "s10-b",
+            "purchased_at_ms": 1788436800000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          }
+        ],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": null,
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "device-p-split-10",
+          "household_id": "household-2",
+          "account_age_days": 180,
+          "confirmed_purchase_days": 3
+        }
+      },
+      "receipt": {
+        "receipt_id": "s10-new",
+        "purchased_at_ms": 1788444000000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "legit_family_split-011",
+      "split": "calibration",
+      "label": "legitimate",
+      "description": "Family, two receipts on one day: till and delivery",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "p-split-11",
+        "label": "p-split-11",
+        "synthetic": true,
+        "receipts": [
+          {
+            "receipt_id": "s11-a",
+            "purchased_at_ms": 1788426000000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          },
+          {
+            "receipt_id": "s11-b",
+            "purchased_at_ms": 1788436800000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          }
+        ],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": null,
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "device-p-split-11",
+          "household_id": "household-3",
+          "account_age_days": 180,
+          "confirmed_purchase_days": 3
+        }
+      },
+      "receipt": {
+        "receipt_id": "s11-new",
+        "purchased_at_ms": 1788444000000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "legit_family_split-012",
+      "split": "calibration",
+      "label": "legitimate",
+      "description": "Family, two receipts on one day: till and delivery",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "p-split-12",
+        "label": "p-split-12",
+        "synthetic": true,
+        "receipts": [
+          {
+            "receipt_id": "s12-a",
+            "purchased_at_ms": 1788426000000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          },
+          {
+            "receipt_id": "s12-b",
+            "purchased_at_ms": 1788436800000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          }
+        ],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": null,
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "device-p-split-12",
+          "household_id": "household-0",
+          "account_age_days": 180,
+          "confirmed_purchase_days": 3
+        }
+      },
+      "receipt": {
+        "receipt_id": "s12-new",
+        "purchased_at_ms": 1788444000000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "legit_return-013",
+      "split": "calibration",
+      "label": "legitimate",
+      "description": "Honest partial return of a purchase",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "p-return-13",
+        "label": "p-return-13",
+        "synthetic": true,
+        "receipts": [
+          {
+            "receipt_id": "t13-a",
+            "purchased_at_ms": 1788080400000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          }
+        ],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": null,
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "device-p-return-13",
+          "household_id": null,
+          "account_age_days": 180,
+          "confirmed_purchase_days": 3
+        }
+      },
+      "receipt": {
+        "receipt_id": "t13-new",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": true,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "legit_return-014",
+      "split": "calibration",
+      "label": "legitimate",
+      "description": "Honest partial return of a purchase",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "p-return-14",
+        "label": "p-return-14",
+        "synthetic": true,
+        "receipts": [
+          {
+            "receipt_id": "t14-a",
+            "purchased_at_ms": 1788080400000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          }
+        ],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": null,
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "device-p-return-14",
+          "household_id": null,
+          "account_age_days": 180,
+          "confirmed_purchase_days": 3
+        }
+      },
+      "receipt": {
+        "receipt_id": "t14-new",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": true,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "legit_return-015",
+      "split": "calibration",
+      "label": "legitimate",
+      "description": "Honest partial return of a purchase",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "p-return-15",
+        "label": "p-return-15",
+        "synthetic": true,
+        "receipts": [
+          {
+            "receipt_id": "t15-a",
+            "purchased_at_ms": 1788080400000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          }
+        ],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": null,
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "device-p-return-15",
+          "household_id": null,
+          "account_age_days": 180,
+          "confirmed_purchase_days": 3
+        }
+      },
+      "receipt": {
+        "receipt_id": "t15-new",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": true,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "legit_return-016",
+      "split": "calibration",
+      "label": "legitimate",
+      "description": "Honest partial return of a purchase",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "p-return-16",
+        "label": "p-return-16",
+        "synthetic": true,
+        "receipts": [
+          {
+            "receipt_id": "t16-a",
+            "purchased_at_ms": 1788080400000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          }
+        ],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": null,
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "device-p-return-16",
+          "household_id": null,
+          "account_age_days": 180,
+          "confirmed_purchase_days": 3
+        }
+      },
+      "receipt": {
+        "receipt_id": "t16-new",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": true,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "abuse_self_referral_new-017",
+      "split": "calibration",
+      "label": "abuse",
+      "description": "Self-referral from a new account without history",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "p-self-17",
+        "label": "p-self-17",
+        "synthetic": true,
+        "receipts": [],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": "p-self-17",
+          "invited_at_ms": 1788339600000,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "device-p-self-17",
+          "household_id": null,
+          "account_age_days": 1,
+          "confirmed_purchase_days": 0
+        }
+      },
+      "receipt": {
+        "receipt_id": "u17-new",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "abuse_self_referral_new-018",
+      "split": "calibration",
+      "label": "abuse",
+      "description": "Self-referral from a new account without history",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "p-self-18",
+        "label": "p-self-18",
+        "synthetic": true,
+        "receipts": [],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": "p-self-18",
+          "invited_at_ms": 1788339600000,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "device-p-self-18",
+          "household_id": null,
+          "account_age_days": 1,
+          "confirmed_purchase_days": 0
+        }
+      },
+      "receipt": {
+        "receipt_id": "u18-new",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "abuse_self_referral_new-019",
+      "split": "calibration",
+      "label": "abuse",
+      "description": "Self-referral from a new account without history",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "p-self-19",
+        "label": "p-self-19",
+        "synthetic": true,
+        "receipts": [],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": "p-self-19",
+          "invited_at_ms": 1788339600000,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "device-p-self-19",
+          "household_id": null,
+          "account_age_days": 1,
+          "confirmed_purchase_days": 0
+        }
+      },
+      "receipt": {
+        "receipt_id": "u19-new",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "abuse_self_referral_new-020",
+      "split": "calibration",
+      "label": "abuse",
+      "description": "Self-referral from a new account without history",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "p-self-20",
+        "label": "p-self-20",
+        "synthetic": true,
+        "receipts": [],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": "p-self-20",
+          "invited_at_ms": 1788339600000,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "device-p-self-20",
+          "household_id": null,
+          "account_age_days": 1,
+          "confirmed_purchase_days": 0
+        }
+      },
+      "receipt": {
+        "receipt_id": "u20-new",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "abuse_multiaccount-021",
+      "split": "calibration",
+      "label": "abuse",
+      "description": "A series of new accounts on one device without history",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "p-multi-21",
+        "label": "p-multi-21",
+        "synthetic": true,
+        "receipts": [],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": null,
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "device-p-multi-21",
+          "household_id": "household-farm",
+          "account_age_days": 2,
+          "confirmed_purchase_days": 0
+        }
+      },
+      "receipt": {
+        "receipt_id": "m21-new",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "abuse_multiaccount-022",
+      "split": "calibration",
+      "label": "abuse",
+      "description": "A series of new accounts on one device without history",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "p-multi-22",
+        "label": "p-multi-22",
+        "synthetic": true,
+        "receipts": [],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": null,
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "device-p-multi-22",
+          "household_id": "household-farm",
+          "account_age_days": 2,
+          "confirmed_purchase_days": 0
+        }
+      },
+      "receipt": {
+        "receipt_id": "m22-new",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "abuse_multiaccount-023",
+      "split": "calibration",
+      "label": "abuse",
+      "description": "A series of new accounts on one device without history",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "p-multi-23",
+        "label": "p-multi-23",
+        "synthetic": true,
+        "receipts": [],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": null,
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "device-p-multi-23",
+          "household_id": "household-farm",
+          "account_age_days": 2,
+          "confirmed_purchase_days": 0
+        }
+      },
+      "receipt": {
+        "receipt_id": "m23-new",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "abuse_multiaccount-024",
+      "split": "calibration",
+      "label": "abuse",
+      "description": "A series of new accounts on one device without history",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "p-multi-24",
+        "label": "p-multi-24",
+        "synthetic": true,
+        "receipts": [],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": null,
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "device-p-multi-24",
+          "household_id": "household-farm",
+          "account_age_days": 2,
+          "confirmed_purchase_days": 0
+        }
+      },
+      "receipt": {
+        "receipt_id": "m24-new",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "abuse_return_after_reward-025",
+      "split": "calibration",
+      "label": "abuse",
+      "description": "Return right after the reward on an account without history",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "p-refund-25",
+        "label": "p-refund-25",
+        "synthetic": true,
+        "receipts": [],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": null,
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "device-p-refund-25",
+          "household_id": null,
+          "account_age_days": 20,
+          "confirmed_purchase_days": 0
+        }
+      },
+      "receipt": {
+        "receipt_id": "n25-new",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": true,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "abuse_return_after_reward-026",
+      "split": "calibration",
+      "label": "abuse",
+      "description": "Return right after the reward on an account without history",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "p-refund-26",
+        "label": "p-refund-26",
+        "synthetic": true,
+        "receipts": [],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": null,
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "device-p-refund-26",
+          "household_id": null,
+          "account_age_days": 20,
+          "confirmed_purchase_days": 0
+        }
+      },
+      "receipt": {
+        "receipt_id": "n26-new",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": true,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "abuse_return_after_reward-027",
+      "split": "calibration",
+      "label": "abuse",
+      "description": "Return right after the reward on an account without history",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "p-refund-27",
+        "label": "p-refund-27",
+        "synthetic": true,
+        "receipts": [],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": null,
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "device-p-refund-27",
+          "household_id": null,
+          "account_age_days": 20,
+          "confirmed_purchase_days": 0
+        }
+      },
+      "receipt": {
+        "receipt_id": "n27-new",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": true,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "abuse_return_after_reward-028",
+      "split": "calibration",
+      "label": "abuse",
+      "description": "Return right after the reward on an account without history",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "p-refund-28",
+        "label": "p-refund-28",
+        "synthetic": true,
+        "receipts": [],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": null,
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "device-p-refund-28",
+          "household_id": null,
+          "account_age_days": 20,
+          "confirmed_purchase_days": 0
+        }
+      },
+      "receipt": {
+        "receipt_id": "n28-new",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": true,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "abuse_split_farm-029",
+      "split": "calibration",
+      "label": "abuse",
+      "description": "Basket splitting on a new account to gain extra days",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "p-farm-29",
+        "label": "p-farm-29",
+        "synthetic": true,
+        "receipts": [
+          {
+            "receipt_id": "g29-a",
+            "purchased_at_ms": 1788512400000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          },
+          {
+            "receipt_id": "g29-b",
+            "purchased_at_ms": 1788519600000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          }
+        ],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": null,
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "device-p-farm-29",
+          "household_id": null,
+          "account_age_days": 3,
+          "confirmed_purchase_days": 0
+        }
+      },
+      "receipt": {
+        "receipt_id": "g29-new",
+        "purchased_at_ms": 1788526800000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "abuse_split_farm-030",
+      "split": "calibration",
+      "label": "abuse",
+      "description": "Basket splitting on a new account to gain extra days",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "p-farm-30",
+        "label": "p-farm-30",
+        "synthetic": true,
+        "receipts": [
+          {
+            "receipt_id": "g30-a",
+            "purchased_at_ms": 1788512400000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          },
+          {
+            "receipt_id": "g30-b",
+            "purchased_at_ms": 1788519600000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          }
+        ],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": null,
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "device-p-farm-30",
+          "household_id": null,
+          "account_age_days": 3,
+          "confirmed_purchase_days": 0
+        }
+      },
+      "receipt": {
+        "receipt_id": "g30-new",
+        "purchased_at_ms": 1788526800000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "abuse_split_farm-031",
+      "split": "calibration",
+      "label": "abuse",
+      "description": "Basket splitting on a new account to gain extra days",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "p-farm-31",
+        "label": "p-farm-31",
+        "synthetic": true,
+        "receipts": [
+          {
+            "receipt_id": "g31-a",
+            "purchased_at_ms": 1788512400000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          },
+          {
+            "receipt_id": "g31-b",
+            "purchased_at_ms": 1788519600000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          }
+        ],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": null,
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "device-p-farm-31",
+          "household_id": null,
+          "account_age_days": 3,
+          "confirmed_purchase_days": 0
+        }
+      },
+      "receipt": {
+        "receipt_id": "g31-new",
+        "purchased_at_ms": 1788526800000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "abuse_split_farm-032",
+      "split": "calibration",
+      "label": "abuse",
+      "description": "Basket splitting on a new account to gain extra days",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "p-farm-32",
+        "label": "p-farm-32",
+        "synthetic": true,
+        "receipts": [
+          {
+            "receipt_id": "g32-a",
+            "purchased_at_ms": 1788512400000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          },
+          {
+            "receipt_id": "g32-b",
+            "purchased_at_ms": 1788519600000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          }
+        ],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": null,
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "device-p-farm-32",
+          "household_id": null,
+          "account_age_days": 3,
+          "confirmed_purchase_days": 0
+        }
+      },
+      "receipt": {
+        "receipt_id": "g32-new",
+        "purchased_at_ms": 1788526800000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "abuse_self_referral_aged-033",
+      "split": "calibration",
+      "label": "abuse",
+      "description": "Self-referral from a mature account with history",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "p-selfaged-33",
+        "label": "p-selfaged-33",
+        "synthetic": true,
+        "receipts": [
+          {
+            "receipt_id": "v33-a",
+            "purchased_at_ms": 1787994000000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          }
+        ],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": "p-selfaged-33",
+          "invited_at_ms": 1788339600000,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "device-p-selfaged-33",
+          "household_id": null,
+          "account_age_days": 180,
+          "confirmed_purchase_days": 3
+        }
+      },
+      "receipt": {
+        "receipt_id": "v33-new",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "abuse_self_referral_aged-034",
+      "split": "calibration",
+      "label": "abuse",
+      "description": "Self-referral from a mature account with history",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "p-selfaged-34",
+        "label": "p-selfaged-34",
+        "synthetic": true,
+        "receipts": [
+          {
+            "receipt_id": "v34-a",
+            "purchased_at_ms": 1787994000000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          }
+        ],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": "p-selfaged-34",
+          "invited_at_ms": 1788339600000,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "device-p-selfaged-34",
+          "household_id": null,
+          "account_age_days": 180,
+          "confirmed_purchase_days": 3
+        }
+      },
+      "receipt": {
+        "receipt_id": "v34-new",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "abuse_self_referral_aged-035",
+      "split": "calibration",
+      "label": "abuse",
+      "description": "Self-referral from a mature account with history",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "p-selfaged-35",
+        "label": "p-selfaged-35",
+        "synthetic": true,
+        "receipts": [
+          {
+            "receipt_id": "v35-a",
+            "purchased_at_ms": 1787994000000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          }
+        ],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": "p-selfaged-35",
+          "invited_at_ms": 1788339600000,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "device-p-selfaged-35",
+          "household_id": null,
+          "account_age_days": 180,
+          "confirmed_purchase_days": 3
+        }
+      },
+      "receipt": {
+        "receipt_id": "v35-new",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "abuse_self_referral_aged-036",
+      "split": "calibration",
+      "label": "abuse",
+      "description": "Self-referral from a mature account with history",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "p-selfaged-36",
+        "label": "p-selfaged-36",
+        "synthetic": true,
+        "receipts": [
+          {
+            "receipt_id": "v36-a",
+            "purchased_at_ms": 1787994000000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          }
+        ],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": "p-selfaged-36",
+          "invited_at_ms": 1788339600000,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "device-p-selfaged-36",
+          "household_id": null,
+          "account_age_days": 180,
+          "confirmed_purchase_days": 3
+        }
+      },
+      "receipt": {
+        "receipt_id": "v36-new",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "final-family_imported_history",
+      "split": "final",
+      "label": "legitimate",
+      "description": "A new family member carried over confirmed history; an ordinary purchase",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "final-person-0",
+        "label": "Synthetic hard case",
+        "synthetic": true,
+        "receipts": [
+          {
+            "receipt_id": "r1-a",
+            "purchased_at_ms": 1787821200000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          },
+          {
+            "receipt_id": "r1-b",
+            "purchased_at_ms": 1788253200000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          }
+        ],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": null,
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "final-device-0",
+          "household_id": "household-final",
+          "account_age_days": 2,
+          "confirmed_purchase_days": 4
+        }
+      },
+      "receipt": {
+        "receipt_id": "final-receipt-0",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "final-first_purchase",
+      "split": "final",
+      "label": "legitimate",
+      "description": "An honest new account makes its first purchase without an invitation",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "final-person-1",
+        "label": "Synthetic hard case",
+        "synthetic": true,
+        "receipts": [],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": null,
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "final-device-1",
+          "household_id": null,
+          "account_age_days": 2,
+          "confirmed_purchase_days": 0
+        }
+      },
+      "receipt": {
+        "receipt_id": "final-receipt-1",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "final-mature_split",
+      "split": "final",
+      "label": "legitimate",
+      "description": "A regular customer made two receipts: a forgotten item and the main basket",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "final-person-2",
+        "label": "Synthetic hard case",
+        "synthetic": true,
+        "receipts": [
+          {
+            "receipt_id": "r1-a",
+            "purchased_at_ms": 1787821200000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          },
+          {
+            "receipt_id": "r1-b",
+            "purchased_at_ms": 1788253200000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          },
+          {
+            "receipt_id": "final-prior-2-0",
+            "purchased_at_ms": 1788598800000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          },
+          {
+            "receipt_id": "final-prior-2-1",
+            "purchased_at_ms": 1788598800000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          }
+        ],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": null,
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "final-device-2",
+          "household_id": null,
+          "account_age_days": 90,
+          "confirmed_purchase_days": 4
+        }
+      },
+      "receipt": {
+        "receipt_id": "final-receipt-2",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "final-family_return",
+      "split": "final",
+      "label": "legitimate",
+      "description": "A long-standing family member legitimately returns part of a purchase",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "final-person-3",
+        "label": "Synthetic hard case",
+        "synthetic": true,
+        "receipts": [
+          {
+            "receipt_id": "r1-a",
+            "purchased_at_ms": 1787821200000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          },
+          {
+            "receipt_id": "r1-b",
+            "purchased_at_ms": 1788253200000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          }
+        ],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": null,
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "final-device-3",
+          "household_id": "household-final",
+          "account_age_days": 90,
+          "confirmed_purchase_days": 4
+        }
+      },
+      "receipt": {
+        "receipt_id": "final-receipt-3",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": true,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "final-new_family_return",
+      "split": "final",
+      "label": "legitimate",
+      "description": "A new account with carried-over history and a shared device legitimately returns a product",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "final-person-4",
+        "label": "Synthetic hard case",
+        "synthetic": true,
+        "receipts": [
+          {
+            "receipt_id": "r1-a",
+            "purchased_at_ms": 1787821200000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          },
+          {
+            "receipt_id": "r1-b",
+            "purchased_at_ms": 1788253200000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          }
+        ],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": null,
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "final-device-4",
+          "household_id": "household-final",
+          "account_age_days": 2,
+          "confirmed_purchase_days": 4
+        }
+      },
+      "receipt": {
+        "receipt_id": "final-receipt-4",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": true,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "final-new_known_split",
+      "split": "final",
+      "label": "legitimate",
+      "description": "An account with history split a purchase across two tills for an everyday reason",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "final-person-5",
+        "label": "Synthetic hard case",
+        "synthetic": true,
+        "receipts": [
+          {
+            "receipt_id": "r1-a",
+            "purchased_at_ms": 1787821200000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          },
+          {
+            "receipt_id": "r1-b",
+            "purchased_at_ms": 1788253200000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          },
+          {
+            "receipt_id": "final-prior-5-0",
+            "purchased_at_ms": 1788598800000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          },
+          {
+            "receipt_id": "final-prior-5-1",
+            "purchased_at_ms": 1788598800000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          }
+        ],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": null,
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "final-device-5",
+          "household_id": null,
+          "account_age_days": 2,
+          "confirmed_purchase_days": 4
+        }
+      },
+      "receipt": {
+        "receipt_id": "final-receipt-5",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "final-self_family",
+      "split": "final",
+      "label": "abuse",
+      "description": "An old account tries to claim a referral reward for inviting itself within a shared household",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "final-person-6",
+        "label": "Synthetic hard case",
+        "synthetic": true,
+        "receipts": [
+          {
+            "receipt_id": "r1-a",
+            "purchased_at_ms": 1787821200000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          },
+          {
+            "receipt_id": "r1-b",
+            "purchased_at_ms": 1788253200000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          }
+        ],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": "final-person-6",
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "final-device-6",
+          "household_id": "household-final",
+          "account_age_days": 90,
+          "confirmed_purchase_days": 4
+        }
+      },
+      "receipt": {
+        "receipt_id": "final-receipt-6",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "final-self_return",
+      "split": "final",
+      "label": "abuse",
+      "description": "A self-referrer returns the qualifying purchase after trying to claim the reward",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "final-person-7",
+        "label": "Synthetic hard case",
+        "synthetic": true,
+        "receipts": [
+          {
+            "receipt_id": "r1-a",
+            "purchased_at_ms": 1787821200000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          },
+          {
+            "receipt_id": "r1-b",
+            "purchased_at_ms": 1788253200000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          }
+        ],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": "final-person-7",
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "final-device-7",
+          "household_id": null,
+          "account_age_days": 90,
+          "confirmed_purchase_days": 4
+        }
+      },
+      "receipt": {
+        "receipt_id": "final-receipt-7",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": true,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "final-self_new_known",
+      "split": "final",
+      "label": "abuse",
+      "description": "An account with history named itself the inviter to get a second reward",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "final-person-8",
+        "label": "Synthetic hard case",
+        "synthetic": true,
+        "receipts": [
+          {
+            "receipt_id": "r1-a",
+            "purchased_at_ms": 1787821200000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          },
+          {
+            "receipt_id": "r1-b",
+            "purchased_at_ms": 1788253200000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          }
+        ],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": "final-person-8",
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "final-device-8",
+          "household_id": null,
+          "account_age_days": 2,
+          "confirmed_purchase_days": 4
+        }
+      },
+      "receipt": {
+        "receipt_id": "final-receipt-8",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "final-self_split_mature",
+      "split": "final",
+      "label": "abuse",
+      "description": "An old account splits the basket and names itself the inviter for extra rewards",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "final-person-9",
+        "label": "Synthetic hard case",
+        "synthetic": true,
+        "receipts": [
+          {
+            "receipt_id": "r1-a",
+            "purchased_at_ms": 1787821200000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          },
+          {
+            "receipt_id": "r1-b",
+            "purchased_at_ms": 1788253200000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          },
+          {
+            "receipt_id": "final-prior-9-0",
+            "purchased_at_ms": 1788598800000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          },
+          {
+            "receipt_id": "final-prior-9-1",
+            "purchased_at_ms": 1788598800000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          }
+        ],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": "final-person-9",
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "final-device-9",
+          "household_id": null,
+          "account_age_days": 90,
+          "confirmed_purchase_days": 4
+        }
+      },
+      "receipt": {
+        "receipt_id": "final-receipt-9",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "final-new_ring_no_device_link",
+      "split": "final",
+      "label": "abuse",
+      "description": "An account-farm member hides the device link; the series is known only to the labeller",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "final-person-10",
+        "label": "Synthetic hard case",
+        "synthetic": true,
+        "receipts": [],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": null,
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "final-device-10",
+          "household_id": null,
+          "account_age_days": 2,
+          "confirmed_purchase_days": 0
+        }
+      },
+      "receipt": {
+        "receipt_id": "final-receipt-10",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "final-concealed_mature_ring",
+      "split": "final",
+      "label": "abuse",
+      "description": "A referral-ring member on an old account; the graph link is invisible to the current features",
+      "profile": {
+        "snapshot_version": 1,
+        "profile_id": "final-person-11",
+        "label": "Synthetic hard case",
+        "synthetic": true,
+        "receipts": [
+          {
+            "receipt_id": "r1-a",
+            "purchased_at_ms": 1787821200000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          },
+          {
+            "receipt_id": "r1-b",
+            "purchased_at_ms": 1788253200000,
+            "store_id": "store-fraud-eval",
+            "returned": false,
+            "lines": [
+              {
+                "sku_id": "sku-milk-1l",
+                "category": "Dairy",
+                "quantity": 1,
+                "paid": true,
+                "amount_kopecks": 8900
+              }
+            ]
+          }
+        ],
+        "inventory": [],
+        "issued_rewards": [],
+        "processed_event_ids": [],
+        "active_coupon": null,
+        "outstanding_promise": null,
+        "progress": {
+          "completed_recipe_ids": [],
+          "avatar_level": 0,
+          "redeemed_savings_28d_kopecks": 0
+        },
+        "referral": {
+          "invited_by_profile_id": null,
+          "invited_at_ms": null,
+          "had_confirmed_purchase_before_invite": false,
+          "inviter_rewards_in_window": 0
+        },
+        "risk_signals": {
+          "device_id": "final-device-11",
+          "household_id": null,
+          "account_age_days": 90,
+          "confirmed_purchase_days": 4
+        }
+      },
+      "receipt": {
+        "receipt_id": "final-receipt-11",
+        "purchased_at_ms": 1788598800000,
+        "store_id": "store-fraud-eval",
+        "returned": false,
+        "lines": [
+          {
+            "sku_id": "sku-milk-1l",
+            "category": "Dairy",
+            "quantity": 1,
+            "paid": true,
+            "amount_kopecks": 8900
+          }
+        ]
+      }
+    }
+  ],
+  "final_set_version": "challenge-combinations-2",
+  "expert_confirmation": "not performed"
+}

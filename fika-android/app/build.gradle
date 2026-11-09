@@ -1,0 +1,32 @@
+plugins {
+    id 'com.android.application'
+    id 'com.chaquo.python'
+}
+android {
+    namespace 'az.nextgen.fika'
+    compileSdk 35
+    buildToolsVersion '35.0.0'
+    defaultConfig {
+        applicationId 'az.nextgen.fika'
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName '1.0.0'
+        def runtimeHash = java.security.MessageDigest.getInstance('SHA-256').digest(file('src/main/assets/fika-runtime.zip').bytes).encodeHex().toString().substring(0, 16)
+        buildConfigField 'String', 'RUNTIME_VERSION', '"' + runtimeHash + '"'
+        ndk { abiFilters 'arm64-v8a', 'x86_64' }
+    }
+    buildFeatures { buildConfig true }
+    buildTypes {
+        release { minifyEnabled false }
+    }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+    androidResources { noCompress 'zip' }
+}
+chaquopy {
+    defaultConfig {
+        version = '3.12'
+        def buildInterpreter = System.getenv('FIKA_BUILD_PYTHON')
+        if (buildInterpreter) buildPython(buildInterpreter)
+    }
+}

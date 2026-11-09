@@ -1,0 +1,35 @@
+{
+  "name": "pyaterochka-game-demo",
+  "private": true,
+  "version": "0.0.0",
+  "license": "Apache-2.0",
+  "packageManager": "bun@1.4.0",
+  "type": "module",
+  "workspaces": [
+    "webapp",
+    "packages/*"
+  ],
+  "overrides": {
+    "brace-expansion": "^5.0.9",
+    "esbuild": "^0.28.1",
+    "nanoid": "^3.3.18",
+    "postcss": "^8.5.26",
+    "sharp": "^0.35.3",
+    "yaml": "^2.9.0"
+  },
+  "scripts": {
+    "dev": "bun run --cwd webapp dev",
+    "build": "bun run --cwd webapp build",
+    "typecheck": "bun run --cwd packages/contracts typecheck && bun run --cwd webapp typecheck",
+    "lint": "bun run --cwd webapp lint",
+    "test": "bun run test:contracts && bun run test:webapp",
+    "test:contracts": "bun run --cwd packages/contracts test",
+    "test:webapp": "bun run --cwd webapp test",
+    "test:engine": "python3 -m unittest discover -s recsys/engine/tests -t .",
+    "test:eval": "python3 -m unittest discover -s recsys/eval -p 'test_*.py'",
+    "validate:recsys": "python3 recsys/validate.py && python3 recsys/validate_explanation.py && python3 recsys/eval_creatives.py",
+    "e2e:demo": "bun run --cwd webapp e2e:demo",
+    "docs:shots": "bun run --cwd webapp docs:shots",
+    "check": "bun run typecheck && bun run lint && bun run test && bun run test:engine && bun run test:eval && bun run validate:recsys"
+  }
+}

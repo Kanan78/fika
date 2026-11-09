@@ -1,0 +1,101 @@
+{
+  "profile": {
+    "customer_id": "u_5120",
+    "display_name": "Irina",
+    "cadence_weeks": 2.1,
+    "categories": [
+      "baby",
+      "dairy"
+    ],
+    "store_engagement": "medium",
+    "social_engagement": "low",
+    "fatigue": 0.1,
+    "sponsored_exposures_14d": 0
+  },
+  "decision": {
+    "objective": "category_reactivation",
+    "mechanic_family": "store_coop",
+    "behavioral_lever": "collective_progress",
+    "target_action": "purchase_day_in_window",
+    "window_days": 7,
+    "reinforcement_type": "progress_only",
+    "reinforcement_id": null,
+    "reinforcement_cost": 0.0,
+    "uncovered_reward_cost": 0.0,
+    "funding_source": "advertiser",
+    "bid_per_qualified_visit": 18.0,
+    "pacing_multiplier": 1.1,
+    "effective_bid": 19.8,
+    "expected_liability": 5.94,
+    "campaign_budget_snapshot": {
+      "total": 90000.0,
+      "settled_spend": 16400.0,
+      "pending_liability": 2400.0,
+      "available": 71200.0
+    },
+    "p_qvisit_treat": 0.3,
+    "p_qvisit_control": 0.26,
+    "uplift": 0.04,
+    "incrementality_floor": 0.04,
+    "p_billable": 0.3,
+    "p_accept": 0.47,
+    "fading_phase": "persistence",
+    "frequency_state": {
+      "exposures_14d": 1,
+      "cap": 3
+    },
+    "objective_scores": {
+      "media_net": 5.94,
+      "x5_incremental_value": 4.8,
+      "total": 10.74
+    },
+    "advertiser_id": "brand_12",
+    "campaign_id": "camp_058",
+    "creative_id": "cr_058_a",
+    "candidate_set": [
+      "camp_071/cr_071_a",
+      "camp_058/cr_058_a",
+      "organic",
+      "none"
+    ],
+    "policy_version": "questads_0.2",
+    "decision_seed": 512044,
+    "ghost": null,
+    "status": "active",
+    "decision_id": "dec_5120",
+    "experiment_arm": "serve",
+    "sponsored_result": "filled",
+    "surface_result": "sponsored",
+    "propensity": {
+      "experiment": 0.9,
+      "action_given_serve": 0.55,
+      "creative_given_campaign": 1.0,
+      "logging": 0.495
+    },
+    "reason_codes": [
+      "higher_bid_campaign_out_of_pacing",
+      "category_match_dairy",
+      "uplift_at_floor"
+    ]
+  },
+  "creative_copy": {
+    "decision_id": "dec_5120",
+    "title": "Your own Pyaterochka checkpoint",
+    "body": "One visit within seven days advances the chosen store goal.",
+    "progress": "Season 41 percent",
+    "cta": "Contribute",
+    "sponsored_label": "Supported by the brand"
+  },
+  "route_state": {
+    "route_id": "r_5120",
+    "mechanic_family": "store_coop",
+    "status": "in_progress",
+    "window_days": 7,
+    "completion": 0.41,
+    "fading_phase": "onboarding",
+    "unlocks": [
+      "milestone_vote_token"
+    ]
+  },
+  "demo_note": "Campaign brand_19 bids RUB 36 against RUB 18 and matches the category, but its available RUB 400 budget is already reserved for a pending liability. The next relevant campaign wins."
+}

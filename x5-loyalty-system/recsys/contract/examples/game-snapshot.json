@@ -1,0 +1,242 @@
+{
+  "craft_size": 4,
+  "items": [
+    {
+      "id": "club-toaster",
+      "name": "Clubhouse Toaster",
+      "rarity": "common",
+      "category": "Bread & Bakery"
+    },
+    {
+      "id": "milk-pitcher",
+      "name": "Milk Pitcher",
+      "rarity": "common",
+      "category": "Dairy"
+    },
+    {
+      "id": "fruit-basket",
+      "name": "Fruit Basket",
+      "rarity": "common",
+      "category": "Fruit"
+    },
+    {
+      "id": "vegetable-crate",
+      "name": "Vegetable Crate",
+      "rarity": "common",
+      "category": "Vegetables & Herbs"
+    },
+    {
+      "id": "travel-mug",
+      "name": "Travel Mug",
+      "rarity": "common",
+      "category": "Coffee & Tea"
+    },
+    {
+      "id": "snack-bowl",
+      "name": "Snack Bowl",
+      "rarity": "common",
+      "category": "Snacks & Nuts"
+    },
+    {
+      "id": "breakfast-pan",
+      "name": "Breakfast Pan",
+      "rarity": "common",
+      "category": "Eggs & Breakfast"
+    },
+    {
+      "id": "baker-apron",
+      "name": "Baker's Apron",
+      "rarity": "common",
+      "category": "Baking Supplies"
+    },
+    {
+      "id": "chef-knife",
+      "name": "Chef's Knife",
+      "rarity": "epic",
+      "category": "Fresh Food"
+    },
+    {
+      "id": "freezer-chest",
+      "name": "Freezer Chest",
+      "rarity": "epic",
+      "category": "Frozen Food"
+    },
+    {
+      "id": "power-blender",
+      "name": "Power Blender",
+      "rarity": "epic",
+      "category": "Healthy Drinks"
+    },
+    {
+      "id": "master-grill",
+      "name": "Master's Grill",
+      "rarity": "epic",
+      "category": "Meat & Sausages"
+    },
+    {
+      "id": "sushi-kit",
+      "name": "Sushi Kit",
+      "rarity": "epic",
+      "category": "Fish & Asian Cuisine"
+    },
+    {
+      "id": "barista-machine",
+      "name": "Barista Machine",
+      "rarity": "epic",
+      "category": "Coffee & Desserts"
+    },
+    {
+      "id": "pizza-oven",
+      "name": "Pizzaiolo Oven",
+      "rarity": "epic",
+      "category": "Pizza & Ready Meals"
+    },
+    {
+      "id": "picnic-cooler",
+      "name": "Picnic Cooler",
+      "rarity": "epic",
+      "category": "Cold Drinks & Ice Cream"
+    },
+    {
+      "id": "golden-chef-hat",
+      "name": "Golden Chef's Hat",
+      "rarity": "legendary",
+      "category": "Ready Meals"
+    },
+    {
+      "id": "magic-fridge",
+      "name": "Magic Fridge",
+      "rarity": "legendary",
+      "category": "Favourite Buys"
+    },
+    {
+      "id": "royal-cauldron",
+      "name": "Royal Cauldron",
+      "rarity": "legendary",
+      "category": "Grains, Soups & Sauces"
+    },
+    {
+      "id": "dragon-wok",
+      "name": "Dragon Wok",
+      "rarity": "legendary",
+      "category": "Noodles & Asian Cuisine"
+    },
+    {
+      "id": "crystal-icecream-maker",
+      "name": "Crystal Ice Cream Maker",
+      "rarity": "legendary",
+      "category": "Ice Cream & Desserts"
+    },
+    {
+      "id": "legendary-sandwich-press",
+      "name": "Perfect Sandwich Press",
+      "rarity": "legendary",
+      "category": "Bread, Cheese & Deli"
+    },
+    {
+      "id": "treasure-pantry",
+      "name": "Pantry Chest",
+      "rarity": "legendary",
+      "category": "Groceries & Canned Food"
+    },
+    {
+      "id": "freshness-dome",
+      "name": "Freshness Dome",
+      "rarity": "legendary",
+      "category": "Vegetables, Fruit & Herbs"
+    }
+  ],
+  "recipes": [
+    {
+      "id": "breakfast",
+      "title": "Good Morning",
+      "category": "Breakfast, bakery and hot drinks",
+      "item_ids": [
+        "club-toaster",
+        "milk-pitcher",
+        "travel-mug",
+        "breakfast-pan",
+        "barista-machine",
+        "baker-apron",
+        "fruit-basket"
+      ]
+    },
+    {
+      "id": "fresh",
+      "title": "Fresh Pick",
+      "category": "Vegetables, fruit and healthy food",
+      "item_ids": [
+        "fruit-basket",
+        "vegetable-crate",
+        "power-blender",
+        "freshness-dome",
+        "milk-pitcher",
+        "breakfast-pan"
+      ]
+    },
+    {
+      "id": "movie",
+      "title": "No-Cook Evening",
+      "category": "Snacks, drinks and ready meals",
+      "item_ids": [
+        "snack-bowl",
+        "pizza-oven",
+        "picnic-cooler",
+        "legendary-sandwich-press",
+        "freezer-chest"
+      ]
+    },
+    {
+      "id": "asian",
+      "title": "Asian Dinner",
+      "category": "Fish, rice, noodles and Asian sauces",
+      "item_ids": [
+        "sushi-kit",
+        "dragon-wok",
+        "royal-cauldron",
+        "chef-knife",
+        "vegetable-crate",
+        "treasure-pantry"
+      ]
+    },
+    {
+      "id": "chef",
+      "title": "Chef's Dinner",
+      "category": "Meat, fresh food and cooking",
+      "item_ids": [
+        "chef-knife",
+        "master-grill",
+        "golden-chef-hat",
+        "vegetable-crate",
+        "magic-fridge",
+        "royal-cauldron"
+      ]
+    },
+    {
+      "id": "dessert",
+      "title": "Sweet Break",
+      "category": "Desserts, coffee and baking supplies",
+      "item_ids": [
+        "baker-apron",
+        "barista-machine",
+        "crystal-icecream-maker",
+        "milk-pitcher",
+        "fruit-basket",
+        "travel-mug"
+      ]
+    },
+    {
+      "id": "pantry",
+      "title": "Home Pantry",
+      "category": "Groceries, frozen food and long-life products",
+      "item_ids": [
+        "treasure-pantry",
+        "freezer-chest",
+        "magic-fridge",
+        "picnic-cooler",
+        "club-toaster",
+        "legendary-sandwich-press"
+      ]
+    }
+  ]
+}

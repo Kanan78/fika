@@ -1,0 +1,29 @@
+Fika adaptation change record
+
+ M README.md
+ M recsys/engine/policy.py
+ M webapp/demo-api/handler.ts
+ M webapp/e2e/demo/profile-navigation.spec.ts
+ M webapp/e2e/demo/stand.ts
+ M webapp/index.html
+ M webapp/scripts/docs-shots/shots.spec.ts
+ M webapp/src/features/home/DemoEvaluationPanel.tsx
+ M webapp/src/features/home/DemoQuestSection.tsx
+ M webapp/src/features/home/DemoStandPanel.tsx
+ M webapp/src/features/home/DemoTradePanel.tsx
+ M webapp/src/features/home/ProfileDiscount.tsx
+ M webapp/src/features/home/ProfileInventoryCrafting.tsx
+ M webapp/src/features/home/ProfileScreen.tsx
+ M webapp/src/features/home/PyaterochkaHome.tsx
+ M webapp/src/features/home/demo-format.ts
+ M webapp/src/features/home/demo-trades.ts
+ M webapp/src/features/home/navigation.ts
+ M webapp/src/features/home/profile-screen.css
+ M webapp/src/features/home/use-demo-challenge.ts
+ M webapp/tests/home-navigation.test.ts
+?? recsys/engine/tests/test_rolling_campaigns.py
+?? webapp/public/assets/task-brands/SOURCES.md
+?? webapp/public/assets/task-brands/redbull.svg
+?? webapp/public/assets/task-brands/snickers.svg
+?? webapp/src/features/home/LocalDemoPages.tsx
+?? webapp/src/features/home/local-demo.css
